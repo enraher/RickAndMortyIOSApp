@@ -1,0 +1,2 @@
+# RickAndMortyInfo
+To be complete
