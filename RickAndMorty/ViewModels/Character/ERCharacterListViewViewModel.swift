@@ -159,16 +159,15 @@ extension ERCharacterListViewViewModel: UIScrollViewDelegate {
               let url = URL(string: nextUrlString) else {
             return
         }
-        Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { [weak self] t in
+//        Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { [weak self] t in
             let offset = scrollView.contentOffset.y
             let totalContentHeight = scrollView.contentSize.height
             let totalScrollViewFixedHeight = scrollView.frame.size.height
             
             if offset >= (totalContentHeight - totalScrollViewFixedHeight - 120) {
-                self?.fetchAdditionalCharacters(url: url)
+                self.fetchAdditionalCharacters(url: url)
             }
-            t.invalidate()
-        }
-        
+//            t.invalidate()
+//        }
     }
 }
