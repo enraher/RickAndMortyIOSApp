@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ERHEpisode: Codable {
+struct ERHEpisode: Codable, ERHEpisodeDataRender {
     let id: Int
     let name: String
     let air_date: String

@@ -27,6 +27,7 @@
 		DD118A8129A955110091C402 /* ERHCharacterListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A8029A955110091C402 /* ERHCharacterListViewViewModel.swift */; };
 		DD118A8329A9558A0091C402 /* ERHCharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A8229A9558A0091C402 /* ERHCharacterListView.swift */; };
 		DD118A8529A959CB0091C402 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A8429A959CB0091C402 /* Extensions.swift */; };
+		DD8DC53829AB656E002FA083 /* ERHEpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC53729AB656E002FA083 /* ERHEpisodeDetailViewController.swift */; };
 		DDA4403629A9389E00581705 /* ERHService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4403529A9389E00581705 /* ERHService.swift */; };
 		DDA4403829A938B400581705 /* ERHRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4403729A938B400581705 /* ERHRequest.swift */; };
 		DDA4403A29A939CF00581705 /* RMEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4403929A939CF00581705 /* RMEndpoint.swift */; };
@@ -68,6 +69,7 @@
 		DD118A8029A955110091C402 /* ERHCharacterListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacterListViewViewModel.swift; sourceTree = "<group>"; };
 		DD118A8229A9558A0091C402 /* ERHCharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacterListView.swift; sourceTree = "<group>"; };
 		DD118A8429A959CB0091C402 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DD8DC53729AB656E002FA083 /* ERHEpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHEpisodeDetailViewController.swift; sourceTree = "<group>"; };
 		DDA4403529A9389E00581705 /* ERHService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHService.swift; sourceTree = "<group>"; };
 		DDA4403729A938B400581705 /* ERHRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHRequest.swift; sourceTree = "<group>"; };
 		DDA4403929A939CF00581705 /* RMEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEndpoint.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				DDF63E8C29AA185900A8889F /* ERHCharacterDetailViewController.swift */,
+				DD8DC53729AB656E002FA083 /* ERHEpisodeDetailViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				DD0777AD29A8F17400EBC004 /* ERHCharacter.swift in Sources */,
 				DDF63E8A29A9FAA900A8889F /* ERHCharacterCollectionViewCellViewModel.swift in Sources */,
 				DDA4403829A938B400581705 /* ERHRequest.swift in Sources */,
+				DD8DC53829AB656E002FA083 /* ERHEpisodeDetailViewController.swift in Sources */,
 				DD118A8129A955110091C402 /* ERHCharacterListViewViewModel.swift in Sources */,
 				DDF63E9D29AA7C2B00A8889F /* ERHCharacterEpisodeCollectionViewCell.swift in Sources */,
 				DD0777B429A8F21000EBC004 /* ERHCharacterViewController.swift in Sources */,

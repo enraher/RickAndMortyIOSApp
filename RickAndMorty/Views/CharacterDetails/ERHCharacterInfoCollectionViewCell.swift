@@ -93,12 +93,11 @@ final class ERHCharacterInfoCollectionViewCell: UICollectionViewCell {
             
             iconImageView.heightAnchor.constraint(equalToConstant: 30),
             iconImageView.widthAnchor.constraint(equalToConstant: 30),
-            iconImageView.topAnchor.constraint(equalTo: containerView.topAnchor),
-            iconImageView.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -12),
-            iconImageView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor),
+            iconImageView.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 12),
+            iconImageView.centerYAnchor.constraint(equalTo: containerView.centerYAnchor),
 
-            valueLabel.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 10),
-            valueLabel.rightAnchor.constraint(equalTo: iconImageView.leftAnchor),
+            valueLabel.leftAnchor.constraint(equalTo: iconImageView.rightAnchor, constant: 10),
+            valueLabel.rightAnchor.constraint(equalTo: containerView.rightAnchor),
             valueLabel.topAnchor.constraint(equalTo: containerView.topAnchor),
             valueLabel.bottomAnchor.constraint(equalTo: containerView.bottomAnchor),
            

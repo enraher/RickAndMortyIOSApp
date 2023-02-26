@@ -12,6 +12,10 @@ import UIKit
 final class ERHCharacterDetailViewViewModel {
     private let character: ERHCharacter
     
+    public var episodes: [String] {
+        character.episode
+    }
+    
     enum SectionType {
         case photo(viewModel: ERHCharacterPhotoCollectionViewCellViewModel)
         case information(viewModels: [ERHCharacterInfoCollectionViewCellViewModel])
