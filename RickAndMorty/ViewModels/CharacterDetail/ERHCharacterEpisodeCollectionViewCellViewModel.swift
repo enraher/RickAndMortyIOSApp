@@ -60,3 +60,13 @@ final class ERHCharacterEpisodeCollectionViewCellViewModel {
         }
     }
 }
+
+extension ERHCharacterEpisodeCollectionViewCellViewModel:  Hashable, Equatable {
+    static func == (lhs: ERHCharacterEpisodeCollectionViewCellViewModel, rhs: ERHCharacterEpisodeCollectionViewCellViewModel) -> Bool {
+        return lhs.hashValue == rhs.hashValue
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(self.episodeDataUrl?.absoluteString ?? "")
+    }
+}

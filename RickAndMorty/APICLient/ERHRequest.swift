@@ -13,7 +13,7 @@ final class ERHRequest {
         static let baseUrl = "https://rickandmortyapi.com/api"
     }
     
-    private let endpoint: ERHEndpoint
+    let endpoint: ERHEndpoint
     
     private let pathComponents: [String]
     
@@ -107,4 +107,5 @@ final class ERHRequest {
 
 extension ERHRequest {
     static let listCharactersRequest = ERHRequest(endpoint: .character)
+    static let listEpisodesRequest = ERHRequest(endpoint: .episode)
 }

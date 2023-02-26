@@ -28,6 +28,13 @@
 		DD118A8329A9558A0091C402 /* ERHCharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A8229A9558A0091C402 /* ERHCharacterListView.swift */; };
 		DD118A8529A959CB0091C402 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A8429A959CB0091C402 /* Extensions.swift */; };
 		DD8DC53829AB656E002FA083 /* ERHEpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC53729AB656E002FA083 /* ERHEpisodeDetailViewController.swift */; };
+		DD8DC53A29AB6791002FA083 /* ERHAPICacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC53929AB6791002FA083 /* ERHAPICacheManager.swift */; };
+		DD8DC53C29AB6B6D002FA083 /* ERHEpisodeDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC53B29AB6B6D002FA083 /* ERHEpisodeDetailViewViewModel.swift */; };
+		DD8DC53E29AB6C07002FA083 /* ERHEpisodeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC53D29AB6C07002FA083 /* ERHEpisodeDetailView.swift */; };
+		DD8DC54129AB6DEB002FA083 /* ERHEpisodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC54029AB6DEB002FA083 /* ERHEpisodeListView.swift */; };
+		DD8DC54329AB6F8F002FA083 /* ERHEpisodeListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC54229AB6F8F002FA083 /* ERHEpisodeListViewViewModel.swift */; };
+		DD8DC54529AB71AE002FA083 /* ERHGetAllEpisodesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC54429AB71AE002FA083 /* ERHGetAllEpisodesResponse.swift */; };
+		DD8DC54729AB77C3002FA083 /* ERHSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC54629AB77C3002FA083 /* ERHSearchViewController.swift */; };
 		DDA4403629A9389E00581705 /* ERHService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4403529A9389E00581705 /* ERHService.swift */; };
 		DDA4403829A938B400581705 /* ERHRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4403729A938B400581705 /* ERHRequest.swift */; };
 		DDA4403A29A939CF00581705 /* RMEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4403929A939CF00581705 /* RMEndpoint.swift */; };
@@ -70,6 +77,13 @@
 		DD118A8229A9558A0091C402 /* ERHCharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacterListView.swift; sourceTree = "<group>"; };
 		DD118A8429A959CB0091C402 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DD8DC53729AB656E002FA083 /* ERHEpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHEpisodeDetailViewController.swift; sourceTree = "<group>"; };
+		DD8DC53929AB6791002FA083 /* ERHAPICacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHAPICacheManager.swift; sourceTree = "<group>"; };
+		DD8DC53B29AB6B6D002FA083 /* ERHEpisodeDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHEpisodeDetailViewViewModel.swift; sourceTree = "<group>"; };
+		DD8DC53D29AB6C07002FA083 /* ERHEpisodeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHEpisodeDetailView.swift; sourceTree = "<group>"; };
+		DD8DC54029AB6DEB002FA083 /* ERHEpisodeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHEpisodeListView.swift; sourceTree = "<group>"; };
+		DD8DC54229AB6F8F002FA083 /* ERHEpisodeListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHEpisodeListViewViewModel.swift; sourceTree = "<group>"; };
+		DD8DC54429AB71AE002FA083 /* ERHGetAllEpisodesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHGetAllEpisodesResponse.swift; sourceTree = "<group>"; };
+		DD8DC54629AB77C3002FA083 /* ERHSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHSearchViewController.swift; sourceTree = "<group>"; };
 		DDA4403529A9389E00581705 /* ERHService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHService.swift; sourceTree = "<group>"; };
 		DDA4403729A938B400581705 /* ERHRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHRequest.swift; sourceTree = "<group>"; };
 		DDA4403929A939CF00581705 /* RMEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEndpoint.swift; sourceTree = "<group>"; };
@@ -153,6 +167,8 @@
 			children = (
 				DDF63E9E29AA7C5F00A8889F /* CharacterDetail */,
 				DDF63EA529AA7D1000A8889F /* Character */,
+				DD8DC53B29AB6B6D002FA083 /* ERHEpisodeDetailViewViewModel.swift */,
+				DD8DC54229AB6F8F002FA083 /* ERHEpisodeListViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -160,9 +176,11 @@
 		DD0777A629A8F0CF00EBC004 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DD8DC53F29AB6DCC002FA083 /* Episode */,
 				DDF63E9229AA1E3900A8889F /* ERHFooterLoadingCollectionReusableView.swift */,
 				DDF63E9729AA7BC200A8889F /* Character */,
 				DDF63E9629AA7BA800A8889F /* CharacterDetails */,
+				DD8DC53D29AB6C07002FA083 /* ERHEpisodeDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				DDF63E9429AA342600A8889F /* ERHImageLoader.swift */,
+				DD8DC53929AB6791002FA083 /* ERHAPICacheManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -227,8 +246,17 @@
 			isa = PBXGroup;
 			children = (
 				DD118A7E29A950720091C402 /* ERHGetAllCharactersResponse.swift */,
+				DD8DC54429AB71AE002FA083 /* ERHGetAllEpisodesResponse.swift */,
 			);
 			path = APIResponseTypes;
+			sourceTree = "<group>";
+		};
+		DD8DC53F29AB6DCC002FA083 /* Episode */ = {
+			isa = PBXGroup;
+			children = (
+				DD8DC54029AB6DEB002FA083 /* ERHEpisodeListView.swift */,
+			);
+			path = Episode;
 			sourceTree = "<group>";
 		};
 		DDF63E8B29AA183900A8889F /* Other */ = {
@@ -236,6 +264,7 @@
 			children = (
 				DDF63E8C29AA185900A8889F /* ERHCharacterDetailViewController.swift */,
 				DD8DC53729AB656E002FA083 /* ERHEpisodeDetailViewController.swift */,
+				DD8DC54629AB77C3002FA083 /* ERHSearchViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -353,8 +382,13 @@
 				DD118A7529A93E320091C402 /* ERHOrigin.swift in Sources */,
 				DDF63E9129AA18BA00A8889F /* ERHCharacterDetailViewViewModel.swift in Sources */,
 				DD118A7729A93F750091C402 /* ERHSigleLocation.swift in Sources */,
+				DD8DC53C29AB6B6D002FA083 /* ERHEpisodeDetailViewViewModel.swift in Sources */,
+				DD8DC54529AB71AE002FA083 /* ERHGetAllEpisodesResponse.swift in Sources */,
+				DD8DC54129AB6DEB002FA083 /* ERHEpisodeListView.swift in Sources */,
 				DDF63E9529AA342600A8889F /* ERHImageLoader.swift in Sources */,
+				DD8DC53E29AB6C07002FA083 /* ERHEpisodeDetailView.swift in Sources */,
 				DD118A8329A9558A0091C402 /* ERHCharacterListView.swift in Sources */,
+				DD8DC54729AB77C3002FA083 /* ERHSearchViewController.swift in Sources */,
 				DD118A7F29A950720091C402 /* ERHGetAllCharactersResponse.swift in Sources */,
 				DD118A7929A9404E0091C402 /* ERHCharacterStatus.swift in Sources */,
 				DDF63E9929AA7C0400A8889F /* ERHCharacterPhotoCollectionViewCell.swift in Sources */,
@@ -376,7 +410,9 @@
 				DDF63EA029AA7C8300A8889F /* ERHCharacterPhotoCollectionViewCellViewModel.swift in Sources */,
 				DDA4403629A9389E00581705 /* ERHService.swift in Sources */,
 				DD0777AB29A8F16200EBC004 /* ERHLocation.swift in Sources */,
+				DD8DC54329AB6F8F002FA083 /* ERHEpisodeListViewViewModel.swift in Sources */,
 				DDA4403A29A939CF00581705 /* RMEndpoint.swift in Sources */,
+				DD8DC53A29AB6791002FA083 /* ERHAPICacheManager.swift in Sources */,
 				DD0777AD29A8F17400EBC004 /* ERHCharacter.swift in Sources */,
 				DDF63E8A29A9FAA900A8889F /* ERHCharacterCollectionViewCellViewModel.swift in Sources */,
 				DDA4403829A938B400581705 /* ERHRequest.swift in Sources */,

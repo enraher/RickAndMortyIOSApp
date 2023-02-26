@@ -16,6 +16,7 @@ final class ERHCharacterViewController: UIViewController, ERHCharacterListViewDe
         view.backgroundColor = .systemBackground
         title = "Characters"
         setUpView()
+        addSearchButton()
     }
     
     private func setUpView(){
@@ -35,6 +36,20 @@ final class ERHCharacterViewController: UIViewController, ERHCharacterListViewDe
         let detailVC = ERHCharacterDetailViewController(viewModel: viewModel)
         detailVC.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(detailVC, animated: true)
+    }
+    
+    private func addSearchButton() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .search,
+            target: self,
+            action: #selector(didTapSearch))
+    }
+    
+    @objc
+    private func didTapSearch() {
+        let vc = ERHSearchViewController(config: ERHSearchViewController.Config(type: .character))
+        vc.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }

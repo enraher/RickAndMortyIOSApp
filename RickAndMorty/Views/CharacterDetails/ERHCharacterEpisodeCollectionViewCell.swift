@@ -40,7 +40,7 @@ class ERHCharacterEpisodeCollectionViewCell: UICollectionViewCell {
         backgroundColor = .secondarySystemBackground
         contentView.layer.cornerRadius = 4
         contentView.layer.borderWidth = 1
-        contentView.layer.borderColor = UIColor.systemMint.cgColor
+        contentView.layer.borderColor = UIColor.systemGray2.cgColor
         contentView.addSubviews(seasonLabel, nameLabel, airDateLabel)
         addConstraints()
     }
