@@ -9,97 +9,101 @@
 /* Begin PBXBuildFile section */
 		DD07779029A8EEC900EBC004 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07778F29A8EEC900EBC004 /* AppDelegate.swift */; };
 		DD07779229A8EEC900EBC004 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07779129A8EEC900EBC004 /* SceneDelegate.swift */; };
-		DD07779429A8EEC900EBC004 /* ERHTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07779329A8EEC900EBC004 /* ERHTabBarController.swift */; };
+		DD07779429A8EEC900EBC004 /* ERTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07779329A8EEC900EBC004 /* ERTabBarController.swift */; };
 		DD07779929A8EECC00EBC004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD07779829A8EECC00EBC004 /* Assets.xcassets */; };
 		DD07779C29A8EECC00EBC004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD07779A29A8EECC00EBC004 /* LaunchScreen.storyboard */; };
-		DD0777AB29A8F16200EBC004 /* ERHLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0777AA29A8F16200EBC004 /* ERHLocation.swift */; };
-		DD0777AD29A8F17400EBC004 /* ERHCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0777AC29A8F17400EBC004 /* ERHCharacter.swift */; };
-		DD0777AF29A8F17D00EBC004 /* ERHEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0777AE29A8F17D00EBC004 /* ERHEpisode.swift */; };
-		DD0777B429A8F21000EBC004 /* ERHCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0777B329A8F21000EBC004 /* ERHCharacterViewController.swift */; };
-		DD0777B629A8F22200EBC004 /* ERHLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0777B529A8F22200EBC004 /* ERHLocationViewController.swift */; };
-		DD0777B829A8F22F00EBC004 /* ERHEpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0777B729A8F22F00EBC004 /* ERHEpisodeViewController.swift */; };
-		DD0777BA29A8F23D00EBC004 /* ERHSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0777B929A8F23D00EBC004 /* ERHSettingsViewController.swift */; };
-		DD118A7529A93E320091C402 /* ERHOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A7429A93E320091C402 /* ERHOrigin.swift */; };
-		DD118A7729A93F750091C402 /* ERHSigleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A7629A93F750091C402 /* ERHSigleLocation.swift */; };
-		DD118A7929A9404E0091C402 /* ERHCharacterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A7829A9404E0091C402 /* ERHCharacterStatus.swift */; };
-		DD118A7B29A940B40091C402 /* ERHCharacterGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A7A29A940B40091C402 /* ERHCharacterGender.swift */; };
-		DD118A7F29A950720091C402 /* ERHGetAllCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A7E29A950720091C402 /* ERHGetAllCharactersResponse.swift */; };
-		DD118A8129A955110091C402 /* ERHCharacterListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A8029A955110091C402 /* ERHCharacterListViewViewModel.swift */; };
-		DD118A8329A9558A0091C402 /* ERHCharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A8229A9558A0091C402 /* ERHCharacterListView.swift */; };
+		DD0777AB29A8F16200EBC004 /* ERLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0777AA29A8F16200EBC004 /* ERLocation.swift */; };
+		DD0777AD29A8F17400EBC004 /* ERCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0777AC29A8F17400EBC004 /* ERCharacter.swift */; };
+		DD0777AF29A8F17D00EBC004 /* EREpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0777AE29A8F17D00EBC004 /* EREpisode.swift */; };
+		DD0777B429A8F21000EBC004 /* ERCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0777B329A8F21000EBC004 /* ERCharacterViewController.swift */; };
+		DD0777B629A8F22200EBC004 /* ERLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0777B529A8F22200EBC004 /* ERLocationViewController.swift */; };
+		DD0777B829A8F22F00EBC004 /* EREpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0777B729A8F22F00EBC004 /* EREpisodeViewController.swift */; };
+		DD0777BA29A8F23D00EBC004 /* ERSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0777B929A8F23D00EBC004 /* ERSettingsViewController.swift */; };
+		DD118A7529A93E320091C402 /* EROrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A7429A93E320091C402 /* EROrigin.swift */; };
+		DD118A7729A93F750091C402 /* ERSigleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A7629A93F750091C402 /* ERSigleLocation.swift */; };
+		DD118A7929A9404E0091C402 /* ERCharacterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A7829A9404E0091C402 /* ERCharacterStatus.swift */; };
+		DD118A7B29A940B40091C402 /* ERCharacterGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A7A29A940B40091C402 /* ERCharacterGender.swift */; };
+		DD118A7F29A950720091C402 /* ERGetAllCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A7E29A950720091C402 /* ERGetAllCharactersResponse.swift */; };
+		DD118A8129A955110091C402 /* ERCharacterListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A8029A955110091C402 /* ERCharacterListViewViewModel.swift */; };
+		DD118A8329A9558A0091C402 /* ERCharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A8229A9558A0091C402 /* ERCharacterListView.swift */; };
 		DD118A8529A959CB0091C402 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A8429A959CB0091C402 /* Extensions.swift */; };
-		DD8DC53829AB656E002FA083 /* ERHEpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC53729AB656E002FA083 /* ERHEpisodeDetailViewController.swift */; };
-		DD8DC53A29AB6791002FA083 /* ERHAPICacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC53929AB6791002FA083 /* ERHAPICacheManager.swift */; };
-		DD8DC53C29AB6B6D002FA083 /* ERHEpisodeDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC53B29AB6B6D002FA083 /* ERHEpisodeDetailViewViewModel.swift */; };
-		DD8DC53E29AB6C07002FA083 /* ERHEpisodeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC53D29AB6C07002FA083 /* ERHEpisodeDetailView.swift */; };
-		DD8DC54129AB6DEB002FA083 /* ERHEpisodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC54029AB6DEB002FA083 /* ERHEpisodeListView.swift */; };
-		DD8DC54329AB6F8F002FA083 /* ERHEpisodeListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC54229AB6F8F002FA083 /* ERHEpisodeListViewViewModel.swift */; };
-		DD8DC54529AB71AE002FA083 /* ERHGetAllEpisodesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC54429AB71AE002FA083 /* ERHGetAllEpisodesResponse.swift */; };
-		DD8DC54729AB77C3002FA083 /* ERHSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC54629AB77C3002FA083 /* ERHSearchViewController.swift */; };
-		DDA4403629A9389E00581705 /* ERHService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4403529A9389E00581705 /* ERHService.swift */; };
-		DDA4403829A938B400581705 /* ERHRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4403729A938B400581705 /* ERHRequest.swift */; };
-		DDA4403A29A939CF00581705 /* RMEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4403929A939CF00581705 /* RMEndpoint.swift */; };
-		DDF63E8829A9F9C700A8889F /* ERHCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E8729A9F9C700A8889F /* ERHCharacterCollectionViewCell.swift */; };
-		DDF63E8A29A9FAA900A8889F /* ERHCharacterCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E8929A9FAA900A8889F /* ERHCharacterCollectionViewCellViewModel.swift */; };
-		DDF63E8D29AA185900A8889F /* ERHCharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E8C29AA185900A8889F /* ERHCharacterDetailViewController.swift */; };
-		DDF63E8F29AA18AA00A8889F /* ERHCharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E8E29AA18AA00A8889F /* ERHCharacterDetailView.swift */; };
-		DDF63E9129AA18BA00A8889F /* ERHCharacterDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E9029AA18BA00A8889F /* ERHCharacterDetailViewViewModel.swift */; };
-		DDF63E9329AA1E3900A8889F /* ERHFooterLoadingCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E9229AA1E3900A8889F /* ERHFooterLoadingCollectionReusableView.swift */; };
-		DDF63E9529AA342600A8889F /* ERHImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E9429AA342600A8889F /* ERHImageLoader.swift */; };
-		DDF63E9929AA7C0400A8889F /* ERHCharacterPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E9829AA7C0400A8889F /* ERHCharacterPhotoCollectionViewCell.swift */; };
-		DDF63E9B29AA7C1400A8889F /* ERHCharacterInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E9A29AA7C1400A8889F /* ERHCharacterInfoCollectionViewCell.swift */; };
-		DDF63E9D29AA7C2B00A8889F /* ERHCharacterEpisodeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E9C29AA7C2B00A8889F /* ERHCharacterEpisodeCollectionViewCell.swift */; };
-		DDF63EA029AA7C8300A8889F /* ERHCharacterPhotoCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E9F29AA7C8300A8889F /* ERHCharacterPhotoCollectionViewCellViewModel.swift */; };
-		DDF63EA229AA7CA100A8889F /* ERHCharacterInfoCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63EA129AA7CA100A8889F /* ERHCharacterInfoCollectionViewCellViewModel.swift */; };
-		DDF63EA429AA7CAF00A8889F /* ERHCharacterEpisodeCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63EA329AA7CAF00A8889F /* ERHCharacterEpisodeCollectionViewCellViewModel.swift */; };
+		DD8DC53829AB656E002FA083 /* EREpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC53729AB656E002FA083 /* EREpisodeDetailViewController.swift */; };
+		DD8DC53A29AB6791002FA083 /* ERAPICacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC53929AB6791002FA083 /* ERAPICacheManager.swift */; };
+		DD8DC53C29AB6B6D002FA083 /* EREpisodeDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC53B29AB6B6D002FA083 /* EREpisodeDetailViewViewModel.swift */; };
+		DD8DC53E29AB6C07002FA083 /* EREpisodeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC53D29AB6C07002FA083 /* EREpisodeDetailView.swift */; };
+		DD8DC54129AB6DEB002FA083 /* EREpisodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC54029AB6DEB002FA083 /* EREpisodeListView.swift */; };
+		DD8DC54329AB6F8F002FA083 /* EREpisodeListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC54229AB6F8F002FA083 /* EREpisodeListViewViewModel.swift */; };
+		DD8DC54529AB71AE002FA083 /* ERGetAllEpisodesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC54429AB71AE002FA083 /* ERGetAllEpisodesResponse.swift */; };
+		DD8DC54729AB77C3002FA083 /* ERSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC54629AB77C3002FA083 /* ERSearchViewController.swift */; };
+		DD8DC54A29AB89B3002FA083 /* EREpisodeInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC54929AB89B3002FA083 /* EREpisodeInfoCollectionViewCell.swift */; };
+		DD8DC54D29AB89DB002FA083 /* EREpisodeInfoCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC54C29AB89DB002FA083 /* EREpisodeInfoCollectionViewCellViewModel.swift */; };
+		DDA4403629A9389E00581705 /* ERService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4403529A9389E00581705 /* ERService.swift */; };
+		DDA4403829A938B400581705 /* ERRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4403729A938B400581705 /* ERRequest.swift */; };
+		DDA4403A29A939CF00581705 /* EREndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4403929A939CF00581705 /* EREndpoint.swift */; };
+		DDF63E8829A9F9C700A8889F /* ERCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E8729A9F9C700A8889F /* ERCharacterCollectionViewCell.swift */; };
+		DDF63E8A29A9FAA900A8889F /* ERCharacterCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E8929A9FAA900A8889F /* ERCharacterCollectionViewCellViewModel.swift */; };
+		DDF63E8D29AA185900A8889F /* ERCharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E8C29AA185900A8889F /* ERCharacterDetailViewController.swift */; };
+		DDF63E8F29AA18AA00A8889F /* ERCharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E8E29AA18AA00A8889F /* ERCharacterDetailView.swift */; };
+		DDF63E9129AA18BA00A8889F /* ERCharacterDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E9029AA18BA00A8889F /* ERCharacterDetailViewViewModel.swift */; };
+		DDF63E9329AA1E3900A8889F /* ERFooterLoadingCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E9229AA1E3900A8889F /* ERFooterLoadingCollectionReusableView.swift */; };
+		DDF63E9529AA342600A8889F /* ERImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E9429AA342600A8889F /* ERImageLoader.swift */; };
+		DDF63E9929AA7C0400A8889F /* ERCharacterPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E9829AA7C0400A8889F /* ERCharacterPhotoCollectionViewCell.swift */; };
+		DDF63E9B29AA7C1400A8889F /* ERCharacterInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E9A29AA7C1400A8889F /* ERCharacterInfoCollectionViewCell.swift */; };
+		DDF63E9D29AA7C2B00A8889F /* ERCharacterEpisodeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E9C29AA7C2B00A8889F /* ERCharacterEpisodeCollectionViewCell.swift */; };
+		DDF63EA029AA7C8300A8889F /* ERCharacterPhotoCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E9F29AA7C8300A8889F /* ERCharacterPhotoCollectionViewCellViewModel.swift */; };
+		DDF63EA229AA7CA100A8889F /* ERCharacterInfoCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63EA129AA7CA100A8889F /* ERCharacterInfoCollectionViewCellViewModel.swift */; };
+		DDF63EA429AA7CAF00A8889F /* ERCharacterEpisodeCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63EA329AA7CAF00A8889F /* ERCharacterEpisodeCollectionViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD07778C29A8EEC900EBC004 /* RickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD07778F29A8EEC900EBC004 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD07779129A8EEC900EBC004 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD07779329A8EEC900EBC004 /* ERHTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHTabBarController.swift; sourceTree = "<group>"; };
+		DD07779329A8EEC900EBC004 /* ERTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERTabBarController.swift; sourceTree = "<group>"; };
 		DD07779829A8EECC00EBC004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD07779B29A8EECC00EBC004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD07779D29A8EECC00EBC004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD0777AA29A8F16200EBC004 /* ERHLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHLocation.swift; sourceTree = "<group>"; };
-		DD0777AC29A8F17400EBC004 /* ERHCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacter.swift; sourceTree = "<group>"; };
-		DD0777AE29A8F17D00EBC004 /* ERHEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHEpisode.swift; sourceTree = "<group>"; };
-		DD0777B329A8F21000EBC004 /* ERHCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacterViewController.swift; sourceTree = "<group>"; };
-		DD0777B529A8F22200EBC004 /* ERHLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHLocationViewController.swift; sourceTree = "<group>"; };
-		DD0777B729A8F22F00EBC004 /* ERHEpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHEpisodeViewController.swift; sourceTree = "<group>"; };
-		DD0777B929A8F23D00EBC004 /* ERHSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHSettingsViewController.swift; sourceTree = "<group>"; };
-		DD118A7429A93E320091C402 /* ERHOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHOrigin.swift; sourceTree = "<group>"; };
-		DD118A7629A93F750091C402 /* ERHSigleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHSigleLocation.swift; sourceTree = "<group>"; };
-		DD118A7829A9404E0091C402 /* ERHCharacterStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacterStatus.swift; sourceTree = "<group>"; };
-		DD118A7A29A940B40091C402 /* ERHCharacterGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacterGender.swift; sourceTree = "<group>"; };
-		DD118A7E29A950720091C402 /* ERHGetAllCharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHGetAllCharactersResponse.swift; sourceTree = "<group>"; };
-		DD118A8029A955110091C402 /* ERHCharacterListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacterListViewViewModel.swift; sourceTree = "<group>"; };
-		DD118A8229A9558A0091C402 /* ERHCharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacterListView.swift; sourceTree = "<group>"; };
+		DD0777AA29A8F16200EBC004 /* ERLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERLocation.swift; sourceTree = "<group>"; };
+		DD0777AC29A8F17400EBC004 /* ERCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacter.swift; sourceTree = "<group>"; };
+		DD0777AE29A8F17D00EBC004 /* EREpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EREpisode.swift; sourceTree = "<group>"; };
+		DD0777B329A8F21000EBC004 /* ERCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterViewController.swift; sourceTree = "<group>"; };
+		DD0777B529A8F22200EBC004 /* ERLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERLocationViewController.swift; sourceTree = "<group>"; };
+		DD0777B729A8F22F00EBC004 /* EREpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EREpisodeViewController.swift; sourceTree = "<group>"; };
+		DD0777B929A8F23D00EBC004 /* ERSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERSettingsViewController.swift; sourceTree = "<group>"; };
+		DD118A7429A93E320091C402 /* EROrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EROrigin.swift; sourceTree = "<group>"; };
+		DD118A7629A93F750091C402 /* ERSigleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERSigleLocation.swift; sourceTree = "<group>"; };
+		DD118A7829A9404E0091C402 /* ERCharacterStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterStatus.swift; sourceTree = "<group>"; };
+		DD118A7A29A940B40091C402 /* ERCharacterGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterGender.swift; sourceTree = "<group>"; };
+		DD118A7E29A950720091C402 /* ERGetAllCharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERGetAllCharactersResponse.swift; sourceTree = "<group>"; };
+		DD118A8029A955110091C402 /* ERCharacterListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterListViewViewModel.swift; sourceTree = "<group>"; };
+		DD118A8229A9558A0091C402 /* ERCharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterListView.swift; sourceTree = "<group>"; };
 		DD118A8429A959CB0091C402 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		DD8DC53729AB656E002FA083 /* ERHEpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHEpisodeDetailViewController.swift; sourceTree = "<group>"; };
-		DD8DC53929AB6791002FA083 /* ERHAPICacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHAPICacheManager.swift; sourceTree = "<group>"; };
-		DD8DC53B29AB6B6D002FA083 /* ERHEpisodeDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHEpisodeDetailViewViewModel.swift; sourceTree = "<group>"; };
-		DD8DC53D29AB6C07002FA083 /* ERHEpisodeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHEpisodeDetailView.swift; sourceTree = "<group>"; };
-		DD8DC54029AB6DEB002FA083 /* ERHEpisodeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHEpisodeListView.swift; sourceTree = "<group>"; };
-		DD8DC54229AB6F8F002FA083 /* ERHEpisodeListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHEpisodeListViewViewModel.swift; sourceTree = "<group>"; };
-		DD8DC54429AB71AE002FA083 /* ERHGetAllEpisodesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHGetAllEpisodesResponse.swift; sourceTree = "<group>"; };
-		DD8DC54629AB77C3002FA083 /* ERHSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHSearchViewController.swift; sourceTree = "<group>"; };
-		DDA4403529A9389E00581705 /* ERHService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHService.swift; sourceTree = "<group>"; };
-		DDA4403729A938B400581705 /* ERHRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHRequest.swift; sourceTree = "<group>"; };
-		DDA4403929A939CF00581705 /* RMEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEndpoint.swift; sourceTree = "<group>"; };
-		DDF63E8729A9F9C700A8889F /* ERHCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
-		DDF63E8929A9FAA900A8889F /* ERHCharacterCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacterCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
-		DDF63E8C29AA185900A8889F /* ERHCharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacterDetailViewController.swift; sourceTree = "<group>"; };
-		DDF63E8E29AA18AA00A8889F /* ERHCharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacterDetailView.swift; sourceTree = "<group>"; };
-		DDF63E9029AA18BA00A8889F /* ERHCharacterDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacterDetailViewViewModel.swift; sourceTree = "<group>"; };
-		DDF63E9229AA1E3900A8889F /* ERHFooterLoadingCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHFooterLoadingCollectionReusableView.swift; sourceTree = "<group>"; };
-		DDF63E9429AA342600A8889F /* ERHImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHImageLoader.swift; sourceTree = "<group>"; };
-		DDF63E9829AA7C0400A8889F /* ERHCharacterPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacterPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
-		DDF63E9A29AA7C1400A8889F /* ERHCharacterInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacterInfoCollectionViewCell.swift; sourceTree = "<group>"; };
-		DDF63E9C29AA7C2B00A8889F /* ERHCharacterEpisodeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacterEpisodeCollectionViewCell.swift; sourceTree = "<group>"; };
-		DDF63E9F29AA7C8300A8889F /* ERHCharacterPhotoCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacterPhotoCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
-		DDF63EA129AA7CA100A8889F /* ERHCharacterInfoCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacterInfoCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
-		DDF63EA329AA7CAF00A8889F /* ERHCharacterEpisodeCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERHCharacterEpisodeCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		DD8DC53729AB656E002FA083 /* EREpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EREpisodeDetailViewController.swift; sourceTree = "<group>"; };
+		DD8DC53929AB6791002FA083 /* ERAPICacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERAPICacheManager.swift; sourceTree = "<group>"; };
+		DD8DC53B29AB6B6D002FA083 /* EREpisodeDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EREpisodeDetailViewViewModel.swift; sourceTree = "<group>"; };
+		DD8DC53D29AB6C07002FA083 /* EREpisodeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EREpisodeDetailView.swift; sourceTree = "<group>"; };
+		DD8DC54029AB6DEB002FA083 /* EREpisodeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EREpisodeListView.swift; sourceTree = "<group>"; };
+		DD8DC54229AB6F8F002FA083 /* EREpisodeListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EREpisodeListViewViewModel.swift; sourceTree = "<group>"; };
+		DD8DC54429AB71AE002FA083 /* ERGetAllEpisodesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERGetAllEpisodesResponse.swift; sourceTree = "<group>"; };
+		DD8DC54629AB77C3002FA083 /* ERSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERSearchViewController.swift; sourceTree = "<group>"; };
+		DD8DC54929AB89B3002FA083 /* EREpisodeInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EREpisodeInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD8DC54C29AB89DB002FA083 /* EREpisodeInfoCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EREpisodeInfoCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		DDA4403529A9389E00581705 /* ERService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERService.swift; sourceTree = "<group>"; };
+		DDA4403729A938B400581705 /* ERRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERRequest.swift; sourceTree = "<group>"; };
+		DDA4403929A939CF00581705 /* EREndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EREndpoint.swift; sourceTree = "<group>"; };
+		DDF63E8729A9F9C700A8889F /* ERCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		DDF63E8929A9FAA900A8889F /* ERCharacterCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		DDF63E8C29AA185900A8889F /* ERCharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterDetailViewController.swift; sourceTree = "<group>"; };
+		DDF63E8E29AA18AA00A8889F /* ERCharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterDetailView.swift; sourceTree = "<group>"; };
+		DDF63E9029AA18BA00A8889F /* ERCharacterDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterDetailViewViewModel.swift; sourceTree = "<group>"; };
+		DDF63E9229AA1E3900A8889F /* ERFooterLoadingCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERFooterLoadingCollectionReusableView.swift; sourceTree = "<group>"; };
+		DDF63E9429AA342600A8889F /* ERImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERImageLoader.swift; sourceTree = "<group>"; };
+		DDF63E9829AA7C0400A8889F /* ERCharacterPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		DDF63E9A29AA7C1400A8889F /* ERCharacterInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		DDF63E9C29AA7C2B00A8889F /* ERCharacterEpisodeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterEpisodeCollectionViewCell.swift; sourceTree = "<group>"; };
+		DDF63E9F29AA7C8300A8889F /* ERCharacterPhotoCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterPhotoCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		DDF63EA129AA7CA100A8889F /* ERCharacterInfoCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterInfoCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		DDF63EA329AA7CAF00A8889F /* ERCharacterEpisodeCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterEpisodeCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,10 +169,10 @@
 		DD0777A529A8F0C400EBC004 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				DD8DC54B29AB89BD002FA083 /* EpisodeDetail */,
 				DDF63E9E29AA7C5F00A8889F /* CharacterDetail */,
 				DDF63EA529AA7D1000A8889F /* Character */,
-				DD8DC53B29AB6B6D002FA083 /* ERHEpisodeDetailViewViewModel.swift */,
-				DD8DC54229AB6F8F002FA083 /* ERHEpisodeListViewViewModel.swift */,
+				DD8DC54229AB6F8F002FA083 /* EREpisodeListViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -176,11 +180,11 @@
 		DD0777A629A8F0CF00EBC004 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DD8DC54829AB897E002FA083 /* EpisodeDetail */,
 				DD8DC53F29AB6DCC002FA083 /* Episode */,
-				DDF63E9229AA1E3900A8889F /* ERHFooterLoadingCollectionReusableView.swift */,
+				DDF63E9229AA1E3900A8889F /* ERFooterLoadingCollectionReusableView.swift */,
 				DDF63E9729AA7BC200A8889F /* Character */,
 				DDF63E9629AA7BA800A8889F /* CharacterDetails */,
-				DD8DC53D29AB6C07002FA083 /* ERHEpisodeDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,9 +192,9 @@
 		DD0777A729A8F0DB00EBC004 /* APICLient */ = {
 			isa = PBXGroup;
 			children = (
-				DDA4403529A9389E00581705 /* ERHService.swift */,
-				DDA4403729A938B400581705 /* ERHRequest.swift */,
-				DDA4403929A939CF00581705 /* RMEndpoint.swift */,
+				DDA4403529A9389E00581705 /* ERService.swift */,
+				DDA4403729A938B400581705 /* ERRequest.swift */,
+				DDA4403929A939CF00581705 /* EREndpoint.swift */,
 			);
 			path = APICLient;
 			sourceTree = "<group>";
@@ -198,8 +202,8 @@
 		DD0777A829A8F0E600EBC004 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				DDF63E9429AA342600A8889F /* ERHImageLoader.swift */,
-				DD8DC53929AB6791002FA083 /* ERHAPICacheManager.swift */,
+				DDF63E9429AA342600A8889F /* ERImageLoader.swift */,
+				DD8DC53929AB6791002FA083 /* ERAPICacheManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -219,11 +223,11 @@
 		DD0777B029A8F1B600EBC004 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				DD07779329A8EEC900EBC004 /* ERHTabBarController.swift */,
-				DD0777B329A8F21000EBC004 /* ERHCharacterViewController.swift */,
-				DD0777B529A8F22200EBC004 /* ERHLocationViewController.swift */,
-				DD0777B729A8F22F00EBC004 /* ERHEpisodeViewController.swift */,
-				DD0777B929A8F23D00EBC004 /* ERHSettingsViewController.swift */,
+				DD07779329A8EEC900EBC004 /* ERTabBarController.swift */,
+				DD0777B329A8F21000EBC004 /* ERCharacterViewController.swift */,
+				DD0777B529A8F22200EBC004 /* ERLocationViewController.swift */,
+				DD0777B729A8F22F00EBC004 /* EREpisodeViewController.swift */,
+				DD0777B929A8F23D00EBC004 /* ERSettingsViewController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -231,13 +235,13 @@
 		DD118A7C29A9503A0091C402 /* DataTypes */ = {
 			isa = PBXGroup;
 			children = (
-				DD0777AA29A8F16200EBC004 /* ERHLocation.swift */,
-				DD0777AC29A8F17400EBC004 /* ERHCharacter.swift */,
-				DD0777AE29A8F17D00EBC004 /* ERHEpisode.swift */,
-				DD118A7429A93E320091C402 /* ERHOrigin.swift */,
-				DD118A7629A93F750091C402 /* ERHSigleLocation.swift */,
-				DD118A7829A9404E0091C402 /* ERHCharacterStatus.swift */,
-				DD118A7A29A940B40091C402 /* ERHCharacterGender.swift */,
+				DD0777AA29A8F16200EBC004 /* ERLocation.swift */,
+				DD0777AC29A8F17400EBC004 /* ERCharacter.swift */,
+				DD0777AE29A8F17D00EBC004 /* EREpisode.swift */,
+				DD118A7429A93E320091C402 /* EROrigin.swift */,
+				DD118A7629A93F750091C402 /* ERSigleLocation.swift */,
+				DD118A7829A9404E0091C402 /* ERCharacterStatus.swift */,
+				DD118A7A29A940B40091C402 /* ERCharacterGender.swift */,
 			);
 			path = DataTypes;
 			sourceTree = "<group>";
@@ -245,8 +249,8 @@
 		DD118A7D29A950460091C402 /* APIResponseTypes */ = {
 			isa = PBXGroup;
 			children = (
-				DD118A7E29A950720091C402 /* ERHGetAllCharactersResponse.swift */,
-				DD8DC54429AB71AE002FA083 /* ERHGetAllEpisodesResponse.swift */,
+				DD118A7E29A950720091C402 /* ERGetAllCharactersResponse.swift */,
+				DD8DC54429AB71AE002FA083 /* ERGetAllEpisodesResponse.swift */,
 			);
 			path = APIResponseTypes;
 			sourceTree = "<group>";
@@ -254,17 +258,35 @@
 		DD8DC53F29AB6DCC002FA083 /* Episode */ = {
 			isa = PBXGroup;
 			children = (
-				DD8DC54029AB6DEB002FA083 /* ERHEpisodeListView.swift */,
+				DD8DC54029AB6DEB002FA083 /* EREpisodeListView.swift */,
 			);
 			path = Episode;
+			sourceTree = "<group>";
+		};
+		DD8DC54829AB897E002FA083 /* EpisodeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				DD8DC53D29AB6C07002FA083 /* EREpisodeDetailView.swift */,
+				DD8DC54929AB89B3002FA083 /* EREpisodeInfoCollectionViewCell.swift */,
+			);
+			path = EpisodeDetail;
+			sourceTree = "<group>";
+		};
+		DD8DC54B29AB89BD002FA083 /* EpisodeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				DD8DC53B29AB6B6D002FA083 /* EREpisodeDetailViewViewModel.swift */,
+				DD8DC54C29AB89DB002FA083 /* EREpisodeInfoCollectionViewCellViewModel.swift */,
+			);
+			path = EpisodeDetail;
 			sourceTree = "<group>";
 		};
 		DDF63E8B29AA183900A8889F /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				DDF63E8C29AA185900A8889F /* ERHCharacterDetailViewController.swift */,
-				DD8DC53729AB656E002FA083 /* ERHEpisodeDetailViewController.swift */,
-				DD8DC54629AB77C3002FA083 /* ERHSearchViewController.swift */,
+				DDF63E8C29AA185900A8889F /* ERCharacterDetailViewController.swift */,
+				DD8DC53729AB656E002FA083 /* EREpisodeDetailViewController.swift */,
+				DD8DC54629AB77C3002FA083 /* ERSearchViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -272,10 +294,10 @@
 		DDF63E9629AA7BA800A8889F /* CharacterDetails */ = {
 			isa = PBXGroup;
 			children = (
-				DDF63E8E29AA18AA00A8889F /* ERHCharacterDetailView.swift */,
-				DDF63E9829AA7C0400A8889F /* ERHCharacterPhotoCollectionViewCell.swift */,
-				DDF63E9A29AA7C1400A8889F /* ERHCharacterInfoCollectionViewCell.swift */,
-				DDF63E9C29AA7C2B00A8889F /* ERHCharacterEpisodeCollectionViewCell.swift */,
+				DDF63E8E29AA18AA00A8889F /* ERCharacterDetailView.swift */,
+				DDF63E9829AA7C0400A8889F /* ERCharacterPhotoCollectionViewCell.swift */,
+				DDF63E9A29AA7C1400A8889F /* ERCharacterInfoCollectionViewCell.swift */,
+				DDF63E9C29AA7C2B00A8889F /* ERCharacterEpisodeCollectionViewCell.swift */,
 			);
 			path = CharacterDetails;
 			sourceTree = "<group>";
@@ -283,8 +305,8 @@
 		DDF63E9729AA7BC200A8889F /* Character */ = {
 			isa = PBXGroup;
 			children = (
-				DD118A8229A9558A0091C402 /* ERHCharacterListView.swift */,
-				DDF63E8729A9F9C700A8889F /* ERHCharacterCollectionViewCell.swift */,
+				DD118A8229A9558A0091C402 /* ERCharacterListView.swift */,
+				DDF63E8729A9F9C700A8889F /* ERCharacterCollectionViewCell.swift */,
 			);
 			path = Character;
 			sourceTree = "<group>";
@@ -292,10 +314,10 @@
 		DDF63E9E29AA7C5F00A8889F /* CharacterDetail */ = {
 			isa = PBXGroup;
 			children = (
-				DDF63E9029AA18BA00A8889F /* ERHCharacterDetailViewViewModel.swift */,
-				DDF63E9F29AA7C8300A8889F /* ERHCharacterPhotoCollectionViewCellViewModel.swift */,
-				DDF63EA129AA7CA100A8889F /* ERHCharacterInfoCollectionViewCellViewModel.swift */,
-				DDF63EA329AA7CAF00A8889F /* ERHCharacterEpisodeCollectionViewCellViewModel.swift */,
+				DDF63E9029AA18BA00A8889F /* ERCharacterDetailViewViewModel.swift */,
+				DDF63E9F29AA7C8300A8889F /* ERCharacterPhotoCollectionViewCellViewModel.swift */,
+				DDF63EA129AA7CA100A8889F /* ERCharacterInfoCollectionViewCellViewModel.swift */,
+				DDF63EA329AA7CAF00A8889F /* ERCharacterEpisodeCollectionViewCellViewModel.swift */,
 			);
 			path = CharacterDetail;
 			sourceTree = "<group>";
@@ -303,8 +325,8 @@
 		DDF63EA529AA7D1000A8889F /* Character */ = {
 			isa = PBXGroup;
 			children = (
-				DD118A8029A955110091C402 /* ERHCharacterListViewViewModel.swift */,
-				DDF63E8929A9FAA900A8889F /* ERHCharacterCollectionViewCellViewModel.swift */,
+				DD118A8029A955110091C402 /* ERCharacterListViewViewModel.swift */,
+				DDF63E8929A9FAA900A8889F /* ERCharacterCollectionViewCellViewModel.swift */,
 			);
 			path = Character;
 			sourceTree = "<group>";
@@ -379,48 +401,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD118A7529A93E320091C402 /* ERHOrigin.swift in Sources */,
-				DDF63E9129AA18BA00A8889F /* ERHCharacterDetailViewViewModel.swift in Sources */,
-				DD118A7729A93F750091C402 /* ERHSigleLocation.swift in Sources */,
-				DD8DC53C29AB6B6D002FA083 /* ERHEpisodeDetailViewViewModel.swift in Sources */,
-				DD8DC54529AB71AE002FA083 /* ERHGetAllEpisodesResponse.swift in Sources */,
-				DD8DC54129AB6DEB002FA083 /* ERHEpisodeListView.swift in Sources */,
-				DDF63E9529AA342600A8889F /* ERHImageLoader.swift in Sources */,
-				DD8DC53E29AB6C07002FA083 /* ERHEpisodeDetailView.swift in Sources */,
-				DD118A8329A9558A0091C402 /* ERHCharacterListView.swift in Sources */,
-				DD8DC54729AB77C3002FA083 /* ERHSearchViewController.swift in Sources */,
-				DD118A7F29A950720091C402 /* ERHGetAllCharactersResponse.swift in Sources */,
-				DD118A7929A9404E0091C402 /* ERHCharacterStatus.swift in Sources */,
-				DDF63E9929AA7C0400A8889F /* ERHCharacterPhotoCollectionViewCell.swift in Sources */,
-				DD118A7B29A940B40091C402 /* ERHCharacterGender.swift in Sources */,
-				DDF63E8D29AA185900A8889F /* ERHCharacterDetailViewController.swift in Sources */,
-				DDF63E9329AA1E3900A8889F /* ERHFooterLoadingCollectionReusableView.swift in Sources */,
-				DD0777B629A8F22200EBC004 /* ERHLocationViewController.swift in Sources */,
-				DDF63E9B29AA7C1400A8889F /* ERHCharacterInfoCollectionViewCell.swift in Sources */,
-				DD0777AF29A8F17D00EBC004 /* ERHEpisode.swift in Sources */,
-				DDF63EA229AA7CA100A8889F /* ERHCharacterInfoCollectionViewCellViewModel.swift in Sources */,
-				DD07779429A8EEC900EBC004 /* ERHTabBarController.swift in Sources */,
-				DDF63E8829A9F9C700A8889F /* ERHCharacterCollectionViewCell.swift in Sources */,
-				DD0777B829A8F22F00EBC004 /* ERHEpisodeViewController.swift in Sources */,
+				DD118A7529A93E320091C402 /* EROrigin.swift in Sources */,
+				DDF63E9129AA18BA00A8889F /* ERCharacterDetailViewViewModel.swift in Sources */,
+				DD118A7729A93F750091C402 /* ERSigleLocation.swift in Sources */,
+				DD8DC53C29AB6B6D002FA083 /* EREpisodeDetailViewViewModel.swift in Sources */,
+				DD8DC54529AB71AE002FA083 /* ERGetAllEpisodesResponse.swift in Sources */,
+				DD8DC54129AB6DEB002FA083 /* EREpisodeListView.swift in Sources */,
+				DDF63E9529AA342600A8889F /* ERImageLoader.swift in Sources */,
+				DD8DC53E29AB6C07002FA083 /* EREpisodeDetailView.swift in Sources */,
+				DD118A8329A9558A0091C402 /* ERCharacterListView.swift in Sources */,
+				DD8DC54729AB77C3002FA083 /* ERSearchViewController.swift in Sources */,
+				DD118A7F29A950720091C402 /* ERGetAllCharactersResponse.swift in Sources */,
+				DD118A7929A9404E0091C402 /* ERCharacterStatus.swift in Sources */,
+				DDF63E9929AA7C0400A8889F /* ERCharacterPhotoCollectionViewCell.swift in Sources */,
+				DD118A7B29A940B40091C402 /* ERCharacterGender.swift in Sources */,
+				DDF63E8D29AA185900A8889F /* ERCharacterDetailViewController.swift in Sources */,
+				DDF63E9329AA1E3900A8889F /* ERFooterLoadingCollectionReusableView.swift in Sources */,
+				DD0777B629A8F22200EBC004 /* ERLocationViewController.swift in Sources */,
+				DDF63E9B29AA7C1400A8889F /* ERCharacterInfoCollectionViewCell.swift in Sources */,
+				DD0777AF29A8F17D00EBC004 /* EREpisode.swift in Sources */,
+				DDF63EA229AA7CA100A8889F /* ERCharacterInfoCollectionViewCellViewModel.swift in Sources */,
+				DD07779429A8EEC900EBC004 /* ERTabBarController.swift in Sources */,
+				DD8DC54D29AB89DB002FA083 /* EREpisodeInfoCollectionViewCellViewModel.swift in Sources */,
+				DDF63E8829A9F9C700A8889F /* ERCharacterCollectionViewCell.swift in Sources */,
+				DD0777B829A8F22F00EBC004 /* EREpisodeViewController.swift in Sources */,
+				DD8DC54A29AB89B3002FA083 /* EREpisodeInfoCollectionViewCell.swift in Sources */,
 				DD07779029A8EEC900EBC004 /* AppDelegate.swift in Sources */,
 				DD07779229A8EEC900EBC004 /* SceneDelegate.swift in Sources */,
-				DDF63EA429AA7CAF00A8889F /* ERHCharacterEpisodeCollectionViewCellViewModel.swift in Sources */,
-				DD0777BA29A8F23D00EBC004 /* ERHSettingsViewController.swift in Sources */,
+				DDF63EA429AA7CAF00A8889F /* ERCharacterEpisodeCollectionViewCellViewModel.swift in Sources */,
+				DD0777BA29A8F23D00EBC004 /* ERSettingsViewController.swift in Sources */,
 				DD118A8529A959CB0091C402 /* Extensions.swift in Sources */,
-				DDF63EA029AA7C8300A8889F /* ERHCharacterPhotoCollectionViewCellViewModel.swift in Sources */,
-				DDA4403629A9389E00581705 /* ERHService.swift in Sources */,
-				DD0777AB29A8F16200EBC004 /* ERHLocation.swift in Sources */,
-				DD8DC54329AB6F8F002FA083 /* ERHEpisodeListViewViewModel.swift in Sources */,
-				DDA4403A29A939CF00581705 /* RMEndpoint.swift in Sources */,
-				DD8DC53A29AB6791002FA083 /* ERHAPICacheManager.swift in Sources */,
-				DD0777AD29A8F17400EBC004 /* ERHCharacter.swift in Sources */,
-				DDF63E8A29A9FAA900A8889F /* ERHCharacterCollectionViewCellViewModel.swift in Sources */,
-				DDA4403829A938B400581705 /* ERHRequest.swift in Sources */,
-				DD8DC53829AB656E002FA083 /* ERHEpisodeDetailViewController.swift in Sources */,
-				DD118A8129A955110091C402 /* ERHCharacterListViewViewModel.swift in Sources */,
-				DDF63E9D29AA7C2B00A8889F /* ERHCharacterEpisodeCollectionViewCell.swift in Sources */,
-				DD0777B429A8F21000EBC004 /* ERHCharacterViewController.swift in Sources */,
-				DDF63E8F29AA18AA00A8889F /* ERHCharacterDetailView.swift in Sources */,
+				DDF63EA029AA7C8300A8889F /* ERCharacterPhotoCollectionViewCellViewModel.swift in Sources */,
+				DDA4403629A9389E00581705 /* ERService.swift in Sources */,
+				DD0777AB29A8F16200EBC004 /* ERLocation.swift in Sources */,
+				DD8DC54329AB6F8F002FA083 /* EREpisodeListViewViewModel.swift in Sources */,
+				DDA4403A29A939CF00581705 /* EREndpoint.swift in Sources */,
+				DD8DC53A29AB6791002FA083 /* ERAPICacheManager.swift in Sources */,
+				DD0777AD29A8F17400EBC004 /* ERCharacter.swift in Sources */,
+				DDF63E8A29A9FAA900A8889F /* ERCharacterCollectionViewCellViewModel.swift in Sources */,
+				DDA4403829A938B400581705 /* ERRequest.swift in Sources */,
+				DD8DC53829AB656E002FA083 /* EREpisodeDetailViewController.swift in Sources */,
+				DD118A8129A955110091C402 /* ERCharacterListViewViewModel.swift in Sources */,
+				DDF63E9D29AA7C2B00A8889F /* ERCharacterEpisodeCollectionViewCell.swift in Sources */,
+				DD0777B429A8F21000EBC004 /* ERCharacterViewController.swift in Sources */,
+				DDF63E8F29AA18AA00A8889F /* ERCharacterDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
