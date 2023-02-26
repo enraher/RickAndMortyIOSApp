@@ -1,5 +1,5 @@
 //
-//  RMCharacterCollectionViewCell.swift
+//  ERHCharacterCollectionViewCell.swift
 //  RickAndMorty
 //
 //  Created by Enrique Ramirez Hernandez on 25/2/23.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-final class RMCharacterCollectionViewCell: UICollectionViewCell {
-    static let cellIdentifier = "RMCharacterCollectionViewCell"
+final class ERHCharacterCollectionViewCell: UICollectionViewCell {
+    static let cellIdentifier = "ERHCharacterCollectionViewCell"
     
     private let imageView: UIImageView = {
         let imageView = UIImageView()
@@ -95,7 +95,7 @@ final class RMCharacterCollectionViewCell: UICollectionViewCell {
         statusLabel.text = nil
     }
     
-    public func configure(with viewModel: RMCharacterCollectionViewCellViewModel) {
+    public func configure(with viewModel: ERHCharacterCollectionViewCellViewModel) {
         nameLabel.text = viewModel.characterName
         statusLabel.text = viewModel.charaterStatusText
         viewModel.fetchImage { [weak self] result in

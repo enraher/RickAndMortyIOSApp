@@ -1,5 +1,5 @@
 //
-//  RMImageLoader.swift
+//  ERHImageLoader.swift
 //  RickAndMorty
 //
 //  Created by Enrique Ramirez Hernandez on 25/2/23.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-final class RMImageLoader {
-    static let shared = RMImageLoader()
+final class ERHImageLoader {
+    static let shared = ERHImageLoader()
     
     private var imageDataCache = NSCache<NSString, NSData>()
     

@@ -1,5 +1,5 @@
 //
-//  CharacterListView.swift
+//  ERHCharacterListView.swift
 //  RickAndMorty
 //
 //  Created by Enrique Ramirez Hernandez on 24/2/23.
@@ -7,15 +7,15 @@
 
 import UIKit
 
-protocol RMCharacterListViewDelegate: AnyObject {
-    func rmCharacterListView(_ charaterListView: RMCharacterListView, didSelectCharacter character: RMCharacter)
+protocol ERHCharacterListViewDelegate: AnyObject {
+    func erhCharacterListView(_ charaterListView: ERHCharacterListView, didSelectCharacter character: ERHCharacter)
 }
 
-final class RMCharacterListView: UIView {
+final class ERHCharacterListView: UIView {
     
-    public weak var delegate: RMCharacterListViewDelegate?
+    public weak var delegate: ERHCharacterListViewDelegate?
     
-    private let viewModel = RMCharacterListViewViewModel()
+    private let viewModel = ERHCharacterListViewViewModel()
     
     private let spinner: UIActivityIndicatorView = {
         let spinner = UIActivityIndicatorView(style: .large)
@@ -32,8 +32,8 @@ final class RMCharacterListView: UIView {
         collectionView.isHidden = true
         collectionView.alpha = 0
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.register(RMCharacterCollectionViewCell.self, forCellWithReuseIdentifier: RMCharacterCollectionViewCell.cellIdentifier)
-        collectionView.register(RMFooterLoadingCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: RMFooterLoadingCollectionReusableView.identifier)
+        collectionView.register(ERHCharacterCollectionViewCell.self, forCellWithReuseIdentifier: ERHCharacterCollectionViewCell.cellIdentifier)
+        collectionView.register(ERHFooterLoadingCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: ERHFooterLoadingCollectionReusableView.identifier)
         return collectionView
     }()
     
@@ -74,7 +74,7 @@ final class RMCharacterListView: UIView {
 }
 
 
-extension RMCharacterListView: RMCharacterListViewViewModelDelegate {
+extension ERHCharacterListView: ERHCharacterListViewViewModelDelegate {
     func didLoadInitialCharacters() {
         self.spinner.stopAnimating()
         self.collectionView.isHidden = false
@@ -84,8 +84,8 @@ extension RMCharacterListView: RMCharacterListViewViewModelDelegate {
         }
     }
     
-    func didSelectChararter(_ character: RMCharacter) {
-        delegate?.rmCharacterListView(self, didSelectCharacter: character)
+    func didSelectChararter(_ character: ERHCharacter) {
+        delegate?.erhCharacterListView(self, didSelectCharacter: character)
     }
     
     func didLoadMoreCharacters(with newIndexPath: [IndexPath]) {

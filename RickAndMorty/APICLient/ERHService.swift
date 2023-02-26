@@ -1,5 +1,5 @@
 //
-//  RMService.swift
+//  ERHService.swift
 //  RickAndMorty
 //
 //  Created by Enrique Ramirez Hernandez on 24/2/23.
@@ -8,30 +8,30 @@
 import Foundation
 
 
-final class RMService {
-    static let shared = RMService()
+final class ERHService {
+    static let shared = ERHService()
     
     private init() {}
     
-    enum RMServiceError: Error {
+    enum ERHServiceError: Error {
         case failedToCreateRequest
         case failedToGetData
     }
     
     public func execute<T: Codable>(
-        _ request: RMRequest,
+        _ request: ERHRequest,
         expecting type: T.Type,
         completion: @escaping (Result<T, Error>) -> Void
     ) {
         guard let urlRequest = self.request(from: request) else {
-            completion(.failure(RMServiceError.failedToCreateRequest))
+            completion(.failure(ERHServiceError.failedToCreateRequest))
             return
         }
         
         let task = URLSession.shared.dataTask(with: urlRequest) {
             data, _, error in
             guard let data = data , error == nil else {
-                completion(.failure(RMServiceError.failedToGetData))
+                completion(.failure(ERHServiceError.failedToGetData))
                 return
             }
             
@@ -47,7 +47,7 @@ final class RMService {
         
     }
     
-    private func request(from rmRequest: RMRequest) -> URLRequest? {
+    private func request(from rmRequest: ERHRequest) -> URLRequest? {
         guard let url = rmRequest.url else { return nil }
         var request = URLRequest(url: url)
         request.httpMethod = rmRequest.httpMethod

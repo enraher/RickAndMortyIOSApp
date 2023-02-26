@@ -1,5 +1,5 @@
 //
-//  RMCharacterDetailViewController.swift
+//  ERHCharacterDetailViewController.swift
 //  RickAndMorty
 //
 //  Created by Enrique Ramirez Hernandez on 25/2/23.
@@ -7,15 +7,15 @@
 
 import UIKit
 
-class RMCharacterDetailViewController: UIViewController {
+class ERHCharacterDetailViewController: UIViewController {
 
-    private let viewModel: RMCharacterDetailViewViewModel
+    private let viewModel: ERHCharacterDetailViewViewModel
     
-    private let detailView: RMCharacterDetailView
+    private let detailView: ERHCharacterDetailView
     
-    init(viewModel: RMCharacterDetailViewViewModel) {
+    init(viewModel: ERHCharacterDetailViewViewModel) {
         self.viewModel = viewModel
-        self.detailView = RMCharacterDetailView(frame: .zero, viewModel: viewModel)
+        self.detailView = ERHCharacterDetailView(frame: .zero, viewModel: viewModel)
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -56,7 +56,7 @@ class RMCharacterDetailViewController: UIViewController {
     
 }
 
-extension RMCharacterDetailViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension ERHCharacterDetailViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return viewModel.sections.count
     }
@@ -77,22 +77,22 @@ extension RMCharacterDetailViewController: UICollectionViewDelegate, UICollectio
         let section = viewModel.sections[indexPath.section]
         switch section {
         case .photo(viewModel: let viewModel):
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RMCharacterPhotoCollectionViewCell.cellIdentifier,
-                for: indexPath) as? RMCharacterPhotoCollectionViewCell else {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ERHCharacterPhotoCollectionViewCell.cellIdentifier,
+                for: indexPath) as? ERHCharacterPhotoCollectionViewCell else {
                 fatalError("missing cell")
             }
             cell.configure(with: viewModel)
             return cell
         case .information(viewModels: let viewModels):
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RMCharacterInfoCollectionViewCell.cellIdentifier,
-                for: indexPath) as? RMCharacterInfoCollectionViewCell else {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ERHCharacterInfoCollectionViewCell.cellIdentifier,
+                for: indexPath) as? ERHCharacterInfoCollectionViewCell else {
                 fatalError("missing cell")
             }
             cell.configure(with: viewModels[indexPath.row])
             return cell
         case .episodes(viewModels: let viewModels):
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RMCharacterEpisodeCollectionViewCell.cellIdentifier,
-                for: indexPath) as? RMCharacterEpisodeCollectionViewCell else {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ERHCharacterEpisodeCollectionViewCell.cellIdentifier,
+                for: indexPath) as? ERHCharacterEpisodeCollectionViewCell else {
                 fatalError("missing cell")
             }
             cell.configure(with: viewModels[indexPath.row])

@@ -1,5 +1,5 @@
 //
-//  CharacterPhotoCollectionViewCell.swift
+//  ERHCharacterPhotoCollectionViewCell.swift
 //  RickAndMorty
 //
 //  Created by Enrique Ramirez Hernandez on 25/2/23.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-final class RMCharacterPhotoCollectionViewCell: UICollectionViewCell {
-    static let cellIdentifier = "RMCharacterPhotoCollectionViewCell"
+final class ERHCharacterPhotoCollectionViewCell: UICollectionViewCell {
+    static let cellIdentifier = "ERHCharacterPhotoCollectionViewCell"
     
 //    private let containerView: UIView = {
 //        let view = UIView()
@@ -74,7 +74,7 @@ final class RMCharacterPhotoCollectionViewCell: UICollectionViewCell {
 //        contentView.layer.shadowOpacity = 0.3
     }
 
-    public func configure(with viewModel: RMCharacterPhotoCollectionViewCellViewModel) {
+    public func configure(with viewModel: ERHCharacterPhotoCollectionViewCellViewModel) {
         viewModel.fetchImage { [weak self] result in
             switch result {
             case .success(let data):

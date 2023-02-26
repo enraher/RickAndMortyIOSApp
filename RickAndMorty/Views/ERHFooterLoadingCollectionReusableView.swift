@@ -1,5 +1,5 @@
 //
-//  RMFooterLoadingCollectionReusableView.swift
+//  ERHFooterLoadingCollectionReusableView.swift
 //  RickAndMorty
 //
 //  Created by Enrique Ramirez Hernandez on 25/2/23.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-final class RMFooterLoadingCollectionReusableView: UICollectionReusableView
+final class ERHFooterLoadingCollectionReusableView: UICollectionReusableView
 {
-    static let identifier = "RMFooterLoadingCollectionReusableView"
+    static let identifier = "ERHFooterLoadingCollectionReusableView"
     
     private let spinner: UIActivityIndicatorView = {
         let spinner = UIActivityIndicatorView(style: .large)

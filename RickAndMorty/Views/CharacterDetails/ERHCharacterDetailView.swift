@@ -1,5 +1,5 @@
 //
-//  RMCharacterDetailView.swift
+//  ERHCharacterDetailView.swift
 //  RickAndMorty
 //
 //  Created by Enrique Ramirez Hernandez on 25/2/23.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class RMCharacterDetailView: UIView {
+class ERHCharacterDetailView: UIView {
 
     public var collectionView: UICollectionView?
     
-    private let viewModel: RMCharacterDetailViewViewModel
+    private let viewModel: ERHCharacterDetailViewViewModel
     
     private let spinner: UIActivityIndicatorView = {
         let spinner = UIActivityIndicatorView(style: .large)
@@ -20,7 +20,7 @@ class RMCharacterDetailView: UIView {
         return spinner
     }()
     
-    init(frame: CGRect, viewModel: RMCharacterDetailViewViewModel) {
+    init(frame: CGRect, viewModel: ERHCharacterDetailViewViewModel) {
         self.viewModel = viewModel
         super.init(frame: frame)
         translatesAutoresizingMaskIntoConstraints = false
@@ -58,9 +58,9 @@ class RMCharacterDetailView: UIView {
             return self.createSection(for: sectionIndex)
         }
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.register(RMCharacterPhotoCollectionViewCell.self, forCellWithReuseIdentifier: RMCharacterPhotoCollectionViewCell.cellIdentifier)
-        collectionView.register(RMCharacterInfoCollectionViewCell.self, forCellWithReuseIdentifier: RMCharacterInfoCollectionViewCell.cellIdentifier)
-        collectionView.register(RMCharacterEpisodeCollectionViewCell.self, forCellWithReuseIdentifier: RMCharacterEpisodeCollectionViewCell.cellIdentifier)
+        collectionView.register(ERHCharacterPhotoCollectionViewCell.self, forCellWithReuseIdentifier: ERHCharacterPhotoCollectionViewCell.cellIdentifier)
+        collectionView.register(ERHCharacterInfoCollectionViewCell.self, forCellWithReuseIdentifier: ERHCharacterInfoCollectionViewCell.cellIdentifier)
+        collectionView.register(ERHCharacterEpisodeCollectionViewCell.self, forCellWithReuseIdentifier: ERHCharacterEpisodeCollectionViewCell.cellIdentifier)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         return collectionView
     }

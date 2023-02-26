@@ -1,5 +1,5 @@
 //
-//  RMRequest.swift
+//  ERHRequest.swift
 //  RickAndMorty
 //
 //  Created by Enrique Ramirez Hernandez on 24/2/23.
@@ -7,13 +7,13 @@
 
 import Foundation
 
-final class RMRequest {
+final class ERHRequest {
        
     private struct Constants {
         static let baseUrl = "https://rickandmortyapi.com/api"
     }
     
-    private let endpoint: RMEdnpoint
+    private let endpoint: ERHEndpoint
     
     private let pathComponents: [String]
     
@@ -49,7 +49,7 @@ final class RMRequest {
     
     public let httpMethod = "GET"
     
-    init(endpoint: RMEdnpoint,
+    init(endpoint: ERHEndpoint,
          pathComponents: [String] = [],
          queryParameters: [URLQueryItem] = []
     ) {
@@ -73,7 +73,7 @@ final class RMRequest {
                     pathComponents = components
                     pathComponents.removeFirst()
                 }
-                if let rmEndpoint = RMEdnpoint(rawValue: enpointString) {
+                if let rmEndpoint = ERHEndpoint(rawValue: enpointString) {
                     self.init(endpoint: rmEndpoint, pathComponents: pathComponents)
                     return
                 }
@@ -92,7 +92,7 @@ final class RMRequest {
                     return URLQueryItem(name: parts[0], value: parts[1])
                 }
                 
-                if let rmEndpoint = RMEdnpoint(rawValue: enpointString) {
+                if let rmEndpoint = ERHEndpoint(rawValue: enpointString) {
                     self.init(endpoint: rmEndpoint, queryParameters: queryItems)
                     return
                 }
@@ -105,6 +105,6 @@ final class RMRequest {
 }
 
 
-extension RMRequest {
-    static let listCharactersRequest = RMRequest(endpoint: .character)
+extension ERHRequest {
+    static let listCharactersRequest = ERHRequest(endpoint: .character)
 }

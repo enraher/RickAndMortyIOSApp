@@ -1,5 +1,5 @@
 //
-//  RMLocationViewController.swift
+//  ERHLocationViewController.swift
 //  RickAndMorty
 //
 //  Created by Enrique Ramirez Hernandez on 24/2/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class RMLocationViewController: UIViewController {
+final class ERHLocationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

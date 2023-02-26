@@ -1,5 +1,5 @@
 //
-//  RMCharacterInfoCollectionViewCellViewModel.swift
+//  ERHCharacterInfoCollectionViewCellViewModel.swift
 //  RickAndMorty
 //
 //  Created by Enrique Ramirez Hernandez on 25/2/23.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-final class RMCharacterInfoCollectionViewCellViewModel {
+final class ERHCharacterInfoCollectionViewCellViewModel {
     enum `Type` : String {
         case name
         case species

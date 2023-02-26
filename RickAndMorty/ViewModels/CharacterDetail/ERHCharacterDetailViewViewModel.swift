@@ -1,5 +1,5 @@
 //
-//  RMCharacterDetailViewViewModel.swift
+//  ERHCharacterDetailViewViewModel.swift
 //  RickAndMorty
 //
 //  Created by Enrique Ramirez Hernandez on 25/2/23.
@@ -9,18 +9,18 @@ import Foundation
 import UIKit
 
 
-final class RMCharacterDetailViewViewModel {
-    private let character: RMCharacter
+final class ERHCharacterDetailViewViewModel {
+    private let character: ERHCharacter
     
     enum SectionType {
-        case photo(viewModel: RMCharacterPhotoCollectionViewCellViewModel)
-        case information(viewModels: [RMCharacterInfoCollectionViewCellViewModel])
-        case episodes(viewModels: [RMCharacterEpisodeCollectionViewCellViewModel])
+        case photo(viewModel: ERHCharacterPhotoCollectionViewCellViewModel)
+        case information(viewModels: [ERHCharacterInfoCollectionViewCellViewModel])
+        case episodes(viewModels: [ERHCharacterEpisodeCollectionViewCellViewModel])
     }
     
     public var sections: [SectionType] = []
     
-    init(character: RMCharacter) {
+    init(character: ERHCharacter) {
         self.character = character
         setUpSections()
     }

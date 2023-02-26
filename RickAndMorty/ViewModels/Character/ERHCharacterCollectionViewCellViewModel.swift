@@ -1,5 +1,5 @@
 //
-//  RMCharacterCollectionViewCellViewModel.swift
+//  ERHCharacterCollectionViewCellViewModel.swift
 //  RickAndMorty
 //
 //  Created by Enrique Ramirez Hernandez on 25/2/23.
@@ -7,14 +7,14 @@
 
 import Foundation
 
-final class RMCharacterCollectionViewCellViewModel {
+final class ERHCharacterCollectionViewCellViewModel {
     public let characterName: String
-    private let characterStatus: RMCharacterStatus
+    private let characterStatus: ERHCharacterStatus
     private let characterImageUrl: URL?
         
     init (
         characterName: String,
-        characterStatus: RMCharacterStatus,
+        characterStatus: ERHCharacterStatus,
         characterImageUrl: URL?
     ) {
         self.characterName = characterName
@@ -32,13 +32,13 @@ final class RMCharacterCollectionViewCellViewModel {
             return
         }
         
-        RMImageLoader.shared.downloadImage(from: url, completion: completion)
+        ERHImageLoader.shared.downloadImage(from: url, completion: completion)
     }
 }
 
 
-extension RMCharacterCollectionViewCellViewModel:  Hashable, Equatable {
-    static func == (lhs: RMCharacterCollectionViewCellViewModel, rhs: RMCharacterCollectionViewCellViewModel) -> Bool {
+extension ERHCharacterCollectionViewCellViewModel:  Hashable, Equatable {
+    static func == (lhs: ERHCharacterCollectionViewCellViewModel, rhs: ERHCharacterCollectionViewCellViewModel) -> Bool {
         return lhs.hashValue == rhs.hashValue
     }
     

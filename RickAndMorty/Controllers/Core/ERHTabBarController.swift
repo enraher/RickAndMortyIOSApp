@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ERHTabBarController.swift
 //  RickAndMorty
 //
 //  Created by Enrique Ramirez Hernandez on 24/2/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class RMTabBarController: UITabBarController {
+final class ERHTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,10 +15,10 @@ final class RMTabBarController: UITabBarController {
     }
 
     private func setUpTabs() {
-        let characterVC = RMCharacterViewController()
-        let locationsVC = RMLocationViewController()
-        let episodesVC = RMEpisodeViewController()
-        let settingsVC = RMSettingsViewController()
+        let characterVC = ERHCharacterViewController()
+        let locationsVC = ERHLocationViewController()
+        let episodesVC = ERHEpisodeViewController()
+        let settingsVC = ERHSettingsViewController()
         
         characterVC.navigationItem.largeTitleDisplayMode = .automatic
         locationsVC.navigationItem.largeTitleDisplayMode = .automatic

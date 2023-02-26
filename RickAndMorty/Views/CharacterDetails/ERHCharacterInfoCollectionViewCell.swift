@@ -1,5 +1,5 @@
 //
-//  CharacterInfoCollectionViewCell.swift
+//  ERHCharacterInfoCollectionViewCell.swift
 //  RickAndMorty
 //
 //  Created by Enrique Ramirez Hernandez on 25/2/23.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-final class RMCharacterInfoCollectionViewCell: UICollectionViewCell {
+final class ERHCharacterInfoCollectionViewCell: UICollectionViewCell {
     
-    static let cellIdentifier = "RMCharacterInfoCollectionViewCell"
+    static let cellIdentifier = "ERHCharacterInfoCollectionViewCell"
     
     private let containerView: UIView = {
            let view = UIView()
@@ -116,7 +116,7 @@ final class RMCharacterInfoCollectionViewCell: UICollectionViewCell {
         
     }
     
-    public func configure(with viewModel: RMCharacterInfoCollectionViewCellViewModel){
+    public func configure(with viewModel: ERHCharacterInfoCollectionViewCellViewModel){
         titleLabel.text = viewModel.title
         valueLabel.text = viewModel.displayValue
         iconImageView.image = viewModel.iconImage

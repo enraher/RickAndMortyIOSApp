@@ -1,5 +1,5 @@
 //
-//  RMCharacterViewController.swift
+//  ERHCharacterViewController.swift
 //  RickAndMorty
 //
 //  Created by Enrique Ramirez Hernandez on 24/2/23.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-final class RMCharacterViewController: UIViewController, RMCharacterListViewDelegate {
+final class ERHCharacterViewController: UIViewController, ERHCharacterListViewDelegate {
 
-    private let characterListView = RMCharacterListView()
+    private let characterListView = ERHCharacterListView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,10 +29,10 @@ final class RMCharacterViewController: UIViewController, RMCharacterListViewDele
         ])
     }
     
-    func rmCharacterListView(_ charaterListView: RMCharacterListView, didSelectCharacter character: RMCharacter) {
+    func erhCharacterListView(_ charaterListView: ERHCharacterListView, didSelectCharacter character: ERHCharacter) {
         
-        let viewModel = RMCharacterDetailViewViewModel(character: character)
-        let detailVC = RMCharacterDetailViewController(viewModel: viewModel)
+        let viewModel = ERHCharacterDetailViewViewModel(character: character)
+        let detailVC = ERHCharacterDetailViewController(viewModel: viewModel)
         detailVC.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(detailVC, animated: true)
     }

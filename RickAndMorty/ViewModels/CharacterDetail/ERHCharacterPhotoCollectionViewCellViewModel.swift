@@ -1,5 +1,5 @@
 //
-//  RMCharacterPhotoCollectionViewCellViewModel.swift
+//  ERHCharacterPhotoCollectionViewCellViewModel.swift
 //  RickAndMorty
 //
 //  Created by Enrique Ramirez Hernandez on 25/2/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class RMCharacterPhotoCollectionViewCellViewModel {
+final class ERHCharacterPhotoCollectionViewCellViewModel {
     
     private let imageUrl: URL?
     
@@ -20,6 +20,6 @@ final class RMCharacterPhotoCollectionViewCellViewModel {
             completion(.failure(URLError(.badURL)))
             return
         }
-        RMImageLoader.shared.downloadImage(from: imageUrl, completion: completion)
+        ERHImageLoader.shared.downloadImage(from: imageUrl, completion: completion)
     }
 }

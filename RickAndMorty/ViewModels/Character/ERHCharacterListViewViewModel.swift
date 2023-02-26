@@ -1,5 +1,5 @@
 //
-//  CharacterListViewViewModel.swift
+//  ERHCharacterListViewViewModel.swift
 //  RickAndMorty
 //
 //  Created by Enrique Ramirez Hernandez on 24/2/23.
@@ -7,22 +7,22 @@
 
 import UIKit
 
-protocol RMCharacterListViewViewModelDelegate: AnyObject {
+protocol ERHCharacterListViewViewModelDelegate: AnyObject {
     func didLoadInitialCharacters()
-    func didSelectChararter(_ character: RMCharacter)
+    func didSelectChararter(_ character: ERHCharacter)
     func didLoadMoreCharacters(with newIndexPath: [IndexPath])
 }
 
-final class RMCharacterListViewViewModel: NSObject {
+final class ERHCharacterListViewViewModel: NSObject {
     
-    public weak var delegate: RMCharacterListViewViewModelDelegate?
+    public weak var delegate: ERHCharacterListViewViewModelDelegate?
     
     private var isLoadingMoreCharacters = false
     
-    private var characters: [RMCharacter] = [] {
+    private var characters: [ERHCharacter] = [] {
         didSet {
             for character in characters {
-                let viewModel = RMCharacterCollectionViewCellViewModel(
+                let viewModel = ERHCharacterCollectionViewCellViewModel(
                     characterName: character.name,
                     characterStatus: character.status,
                     characterImageUrl: URL(string: character.image))
@@ -34,14 +34,14 @@ final class RMCharacterListViewViewModel: NSObject {
         }
     }
     
-    private var cellViewModels: [RMCharacterCollectionViewCellViewModel] = []
+    private var cellViewModels: [ERHCharacterCollectionViewCellViewModel] = []
     
-    private var apiInfo: RMGetAllCharactersResponse.Info? = nil
+    private var apiInfo: ERHGetAllCharactersResponse.Info? = nil
     
     public func fetchCharacters() {
-        RMService.shared.execute(
+        ERHService.shared.execute(
             .listCharactersRequest,
-            expecting: RMGetAllCharactersResponse.self
+            expecting: ERHGetAllCharactersResponse.self
         ) { [weak self] result in
             switch result {
             case .success(let responseModel):
@@ -62,11 +62,11 @@ final class RMCharacterListViewViewModel: NSObject {
             return
         }
         isLoadingMoreCharacters = true
-        guard let request = RMRequest(url: url) else {
+        guard let request = ERHRequest(url: url) else {
             return
         }
         
-        RMService.shared.execute(request, expecting: RMGetAllCharactersResponse.self) { [weak self] result in
+        ERHService.shared.execute(request, expecting: ERHGetAllCharactersResponse.self) { [weak self] result in
             guard let strongSelf = self else {
                 return
             }
@@ -100,7 +100,7 @@ final class RMCharacterListViewViewModel: NSObject {
 }
 
 
-extension RMCharacterListViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout
+extension ERHCharacterListViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout
 {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cellViewModels.count
@@ -108,9 +108,9 @@ extension RMCharacterListViewViewModel: UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: RMCharacterCollectionViewCell.cellIdentifier,
+            withReuseIdentifier: ERHCharacterCollectionViewCell.cellIdentifier,
             for: indexPath
-        ) as? RMCharacterCollectionViewCell else {
+        ) as? ERHCharacterCollectionViewCell else {
             fatalError("Unsopported cell")
         }
         cell.configure(with: cellViewModels[indexPath.row])
@@ -133,9 +133,9 @@ extension RMCharacterListViewViewModel: UICollectionViewDataSource, UICollection
         guard kind == UICollectionView.elementKindSectionFooter,
               let footer = collectionView.dequeueReusableSupplementaryView(
                 ofKind: kind,
-                withReuseIdentifier: RMFooterLoadingCollectionReusableView.identifier,
+                withReuseIdentifier: ERHFooterLoadingCollectionReusableView.identifier,
                 for: indexPath
-              ) as? RMFooterLoadingCollectionReusableView else {
+              ) as? ERHFooterLoadingCollectionReusableView else {
             fatalError("unsopported")
         }
         footer.startAnimating()
@@ -150,7 +150,7 @@ extension RMCharacterListViewViewModel: UICollectionViewDataSource, UICollection
     }
 }
 
-extension RMCharacterListViewViewModel: UIScrollViewDelegate {
+extension ERHCharacterListViewViewModel: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         guard shouldShowLoadMoreIndicator,
               !isLoadingMoreCharacters,

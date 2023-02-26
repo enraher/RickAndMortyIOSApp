@@ -1,5 +1,5 @@
 //
-//  RMCharacterStatus.swift
+//  ERHCharacterStatus.swift
 //  RickAndMorty
 //
 //  Created by Enrique Ramirez Hernandez on 24/2/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum RMCharacterStatus: String, Codable {
+enum ERHCharacterStatus: String, Codable {
     case alive = "Alive"
     case dead = "Dead"
     case `unknown` = "unknown"
