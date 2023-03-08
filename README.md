@@ -5,6 +5,7 @@ In this app you can see all the Rick and Morty characters as well as Rick and Mo
 
 # Features
 - In this first example I am not using any library.
+- Every view is created programmatically, not a single storyboard is used but it is based on Autolayout.
 - I create my own cache for images and API calls.
 - I created my own HTTP networking client with URLSession.
 - The app also has pagination.
@@ -12,5 +13,5 @@ In this app you can see all the Rick and Morty characters as well as Rick and Mo
 
 # To be completed
 - Locations 
-- Search fuctionality
+- Search functionality
 - Test
