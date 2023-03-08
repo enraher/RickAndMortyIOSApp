@@ -10,7 +10,7 @@ In this app you can see all the rick and morty characters as well as rick and mo
 - The app also has pagination.
 - The settings tab is developed using SwiftUI
 
-#To be completed
+# To be completed
 - Locations 
 - Search fuctionality
 
