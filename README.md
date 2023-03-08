@@ -1,7 +1,7 @@
 # Rick And Morty Info App
 
 This is an app I am creating just for testing purposes.
-In this app you can see all the rick and morty characters as well as rick and morty episodes
+In this app you can see all the Rick and Morty characters as well as Rick and Morty episodes
 
 # Features
 - In this first example I am not using any library.
