@@ -36,9 +36,7 @@ class ERCharacterDetailViewController: UIViewController {
         
         detailView.collectionView?.delegate = self
         detailView.collectionView?.dataSource = self
-    }
-    
-   
+    }   
     
     @objc
     private func didTapShare() {

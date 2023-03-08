@@ -17,7 +17,6 @@ final class ERLocationViewController: UIViewController {
         addSearchButton()
     }
     
-
     private func addSearchButton() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .search,

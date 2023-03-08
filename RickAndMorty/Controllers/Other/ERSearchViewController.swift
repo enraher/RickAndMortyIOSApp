@@ -18,7 +18,6 @@ class ERSearchViewController: UIViewController {
         let type: `Type`
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Search"
@@ -36,7 +35,4 @@ class ERSearchViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-
- 
-
 }

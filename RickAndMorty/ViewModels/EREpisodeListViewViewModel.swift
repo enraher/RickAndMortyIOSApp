@@ -158,7 +158,6 @@ extension EREpisodeListViewViewModel: UIScrollViewDelegate {
               let url = URL(string: nextUrlString) else {
             return
         }
-//        Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { [weak self] t in
             let offset = scrollView.contentOffset.y
             let totalContentHeight = scrollView.contentSize.height
             let totalScrollViewFixedHeight = scrollView.frame.size.height
@@ -166,7 +165,5 @@ extension EREpisodeListViewViewModel: UIScrollViewDelegate {
             if offset >= (totalContentHeight - totalScrollViewFixedHeight - 120) {
                 self.fetchAdditionalEpisodes(url: url)
             }
-//            t.invalidate()
-//        }
     }
 }
