@@ -15,12 +15,29 @@ enum ERSettingsOption: CaseIterable {
     case apiReference
     case viewCode
     
+    var targetUrl: URL? {
+        switch self {
+        case .rateApp:
+            return nil
+        case .contactUs:
+            return URL(string: "https://www.linkedin.com/in/enraher/")
+        case .terms:
+            return nil
+        case .privacy:
+            return nil
+        case .apiReference:
+            return URL(string: "https://rickandmortyapi.com")
+        case .viewCode:
+            return URL(string: "https://github.com/enraher/RickAndMortyIOSApp")
+        }
+    }
+    
     var displayTitle: String {
         switch self {
         case .rateApp:
             return "Rate App"
         case .contactUs:
-            return "Contact Us"
+            return "Contact Me"
         case .terms:
             return "Terms of Service"
         case .privacy:

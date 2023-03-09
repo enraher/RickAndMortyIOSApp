@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import SafariServices
 
 final class ERSettingsViewController: UIViewController {
     
@@ -48,23 +49,15 @@ final class ERSettingsViewController: UIViewController {
         guard Thread.current.isMainThread else {
             return
         }
-        switch option {
-        case .rateApp:
-            ToBeCompleted()
-        case .contactUs:
-            ToBeCompleted()
-        case .terms:
-            ToBeCompleted()
-        case .privacy:
-            ToBeCompleted()
-        case .apiReference:
-            ToBeCompleted()
-        case .viewCode:
-            ToBeCompleted()
+        if let url = option.targetUrl {
+            let vc = SFSafariViewController(url: url)
+            present(vc, animated: true)
+        } else {
+            toBeCompleted()
         }
     }
     
-    private func ToBeCompleted() {
+    private func toBeCompleted() {
         let alert = UIAlertController(title: "Not implemented", message: "To be completed", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
             switch action.style{
@@ -73,6 +66,8 @@ final class ERSettingsViewController: UIViewController {
             case .cancel:
                 break
             case .destructive:
+                break
+            @unknown default:
                 break
             }
         }))
