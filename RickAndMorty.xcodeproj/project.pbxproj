@@ -46,6 +46,7 @@
 		DDA4403A29A939CF00581705 /* EREndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4403929A939CF00581705 /* EREndpoint.swift */; };
 		DDE93B8A29BA5B170019DE2A /* ERLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE93B8929BA5B170019DE2A /* ERLocationView.swift */; };
 		DDE93B8D29BA5D120019DE2A /* ERLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE93B8C29BA5D120019DE2A /* ERLocationViewModel.swift */; };
+		DDE93B8F29BA60F00019DE2A /* ERGetAllLocationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE93B8E29BA60F00019DE2A /* ERGetAllLocationsResponse.swift */; };
 		DDF63E8829A9F9C700A8889F /* ERCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E8729A9F9C700A8889F /* ERCharacterCollectionViewCell.swift */; };
 		DDF63E8A29A9FAA900A8889F /* ERCharacterCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E8929A9FAA900A8889F /* ERCharacterCollectionViewCellViewModel.swift */; };
 		DDF63E8D29AA185900A8889F /* ERCharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E8C29AA185900A8889F /* ERCharacterDetailViewController.swift */; };
@@ -103,6 +104,7 @@
 		DDA4403929A939CF00581705 /* EREndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EREndpoint.swift; sourceTree = "<group>"; };
 		DDE93B8929BA5B170019DE2A /* ERLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERLocationView.swift; sourceTree = "<group>"; };
 		DDE93B8C29BA5D120019DE2A /* ERLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERLocationViewModel.swift; sourceTree = "<group>"; };
+		DDE93B8E29BA60F00019DE2A /* ERGetAllLocationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERGetAllLocationsResponse.swift; sourceTree = "<group>"; };
 		DDF63E8729A9F9C700A8889F /* ERCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		DDF63E8929A9FAA900A8889F /* ERCharacterCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		DDF63E8C29AA185900A8889F /* ERCharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterDetailViewController.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 			children = (
 				DD118A7E29A950720091C402 /* ERGetAllCharactersResponse.swift */,
 				DD8DC54429AB71AE002FA083 /* ERGetAllEpisodesResponse.swift */,
+				DDE93B8E29BA60F00019DE2A /* ERGetAllLocationsResponse.swift */,
 			);
 			path = APIResponseTypes;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				DD8DC54A29AB89B3002FA083 /* EREpisodeInfoCollectionViewCell.swift in Sources */,
 				DD07779029A8EEC900EBC004 /* AppDelegate.swift in Sources */,
 				DD07779229A8EEC900EBC004 /* SceneDelegate.swift in Sources */,
+				DDE93B8F29BA60F00019DE2A /* ERGetAllLocationsResponse.swift in Sources */,
 				DDF63EA429AA7CAF00A8889F /* ERCharacterEpisodeCollectionViewCellViewModel.swift in Sources */,
 				DD0777BA29A8F23D00EBC004 /* ERSettingsViewController.swift in Sources */,
 				DD118A8529A959CB0091C402 /* Extensions.swift in Sources */,

@@ -15,7 +15,7 @@ class ERLocationView: UIView {
             tableView.isHidden = false
             tableView.reloadData()
             UIView.animate(withDuration: 0.3) {
-                sel.tableView.alpha = 1
+                self.tableView.alpha = 1
             }
         }
     }
@@ -43,10 +43,16 @@ class ERLocationView: UIView {
         addSubviews(tableView, spinner)
         spinner.startAnimating()
         addConstraints()
+        configureTable()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func configureTable(){
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     private func addConstraints(){
@@ -66,5 +72,25 @@ class ERLocationView: UIView {
     
     public func configure(with viewModel: ERLocationViewModel) {
         self.viewModel = viewModel
+    }
+}
+
+extension ERLocationView: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+}
+
+extension ERLocationView: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = "Hello Rick and Morty"
+        return cell
     }
 }

@@ -7,9 +7,11 @@
 
 import UIKit
 
-final class ERLocationViewController: UIViewController {
+final class ERLocationViewController: UIViewController, ERLocationViewModelDelegate {
 
     private let primaryView = ERLocationView()
+    
+    private let viewModel = ERLocationViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,8 @@ final class ERLocationViewController: UIViewController {
         title = "Locations"
         addSearchButton()
         addConstraints()
+        viewModel.delegate = self
+        viewModel.fetchLocations()
     }
     
     private func addSearchButton() {
@@ -43,4 +47,7 @@ final class ERLocationViewController: UIViewController {
         ])
     }
 
+    func didFecthInitialLocation() {
+        primaryView.configure(with: viewModel)
+    }
 }

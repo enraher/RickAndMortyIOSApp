@@ -10,9 +10,7 @@ import UIKit
 final class ERCharacterViewController: UIViewController, ERCharacterListViewDelegate {
 
     private let characterListView = ERCharacterListView()
-    
-    private let viewModel = ERLocationViewModel()
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground

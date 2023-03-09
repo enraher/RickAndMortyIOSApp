@@ -7,8 +7,17 @@
 
 import Foundation
 
+protocol ERLocationViewModelDelegate: AnyObject {
+    func didFecthInitialLocation()
+}
+
 final class ERLocationViewModel {
+    
+    weak var delegate: ERLocationViewModelDelegate?
+    
     private var locations: [ERLocation] = []
+    
+    private var apiInfo: ERGetAllLocationsResponse.Info?
     
     private var cellViewModels: [String] = []
     
@@ -17,9 +26,17 @@ final class ERLocationViewModel {
     }
     
     public func fetchLocations() {
-        ERService.shared.execute(.listLocationsRequest, expecting: String.self) { result in
+        ERService.shared.execute(
+            .listLocationsRequest,
+            expecting: ERGetAllLocationsResponse.self
+        ) { [weak self] result in
             switch result {
             case .success(let success):
+                self?.apiInfo = success.info
+                self?.locations = success.results
+                DispatchQueue.main.async {
+                    self?.delegate?.didFecthInitialLocation()
+                }                
                 break
             case .failure(let failure):
                 break
