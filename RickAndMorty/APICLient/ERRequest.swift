@@ -108,4 +108,5 @@ final class ERRequest {
 extension ERRequest {
     static let listCharactersRequest = ERRequest(endpoint: .character)
     static let listEpisodesRequest = ERRequest(endpoint: .episode)
+    static let listLocationsRequest = ERRequest(endpoint: .location)
 }

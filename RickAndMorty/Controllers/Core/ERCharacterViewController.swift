@@ -11,6 +11,8 @@ final class ERCharacterViewController: UIViewController, ERCharacterListViewDele
 
     private let characterListView = ERCharacterListView()
     
+    private let viewModel = ERLocationViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -51,7 +53,6 @@ final class ERCharacterViewController: UIViewController, ERCharacterListViewDele
         vc.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(vc, animated: true)
     }
-    
 }
     
 

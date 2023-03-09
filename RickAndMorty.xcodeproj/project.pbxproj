@@ -44,6 +44,8 @@
 		DDA4403629A9389E00581705 /* ERService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4403529A9389E00581705 /* ERService.swift */; };
 		DDA4403829A938B400581705 /* ERRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4403729A938B400581705 /* ERRequest.swift */; };
 		DDA4403A29A939CF00581705 /* EREndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4403929A939CF00581705 /* EREndpoint.swift */; };
+		DDE93B8A29BA5B170019DE2A /* ERLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE93B8929BA5B170019DE2A /* ERLocationView.swift */; };
+		DDE93B8D29BA5D120019DE2A /* ERLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE93B8C29BA5D120019DE2A /* ERLocationViewModel.swift */; };
 		DDF63E8829A9F9C700A8889F /* ERCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E8729A9F9C700A8889F /* ERCharacterCollectionViewCell.swift */; };
 		DDF63E8A29A9FAA900A8889F /* ERCharacterCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E8929A9FAA900A8889F /* ERCharacterCollectionViewCellViewModel.swift */; };
 		DDF63E8D29AA185900A8889F /* ERCharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63E8C29AA185900A8889F /* ERCharacterDetailViewController.swift */; };
@@ -99,6 +101,8 @@
 		DDA4403529A9389E00581705 /* ERService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERService.swift; sourceTree = "<group>"; };
 		DDA4403729A938B400581705 /* ERRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERRequest.swift; sourceTree = "<group>"; };
 		DDA4403929A939CF00581705 /* EREndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EREndpoint.swift; sourceTree = "<group>"; };
+		DDE93B8929BA5B170019DE2A /* ERLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERLocationView.swift; sourceTree = "<group>"; };
+		DDE93B8C29BA5D120019DE2A /* ERLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERLocationViewModel.swift; sourceTree = "<group>"; };
 		DDF63E8729A9F9C700A8889F /* ERCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		DDF63E8929A9FAA900A8889F /* ERCharacterCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		DDF63E8C29AA185900A8889F /* ERCharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterDetailViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 		DD0777A529A8F0C400EBC004 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				DDE93B8B29BA5D080019DE2A /* Location */,
 				DD8DC54E29ABB165002FA083 /* Settings */,
 				DD8DC54B29AB89BD002FA083 /* EpisodeDetail */,
 				DDF63E9E29AA7C5F00A8889F /* CharacterDetail */,
@@ -189,6 +194,7 @@
 		DD0777A629A8F0CF00EBC004 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DDE93B8829BA5AF90019DE2A /* Location */,
 				DD8DC55529ABB55E002FA083 /* SettingsSwiftUI */,
 				DD8DC54829AB897E002FA083 /* EpisodeDetail */,
 				DD8DC53F29AB6DCC002FA083 /* Episode */,
@@ -307,6 +313,22 @@
 				DD8DC55629ABB599002FA083 /* ERSettingsView.swift */,
 			);
 			path = SettingsSwiftUI;
+			sourceTree = "<group>";
+		};
+		DDE93B8829BA5AF90019DE2A /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				DDE93B8929BA5B170019DE2A /* ERLocationView.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		DDE93B8B29BA5D080019DE2A /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				DDE93B8C29BA5D120019DE2A /* ERLocationViewModel.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 		DDF63E8B29AA183900A8889F /* Other */ = {
@@ -443,6 +465,7 @@
 				DD118A7F29A950720091C402 /* ERGetAllCharactersResponse.swift in Sources */,
 				DD118A7929A9404E0091C402 /* ERCharacterStatus.swift in Sources */,
 				DDF63E9929AA7C0400A8889F /* ERCharacterPhotoCollectionViewCell.swift in Sources */,
+				DDE93B8D29BA5D120019DE2A /* ERLocationViewModel.swift in Sources */,
 				DD118A7B29A940B40091C402 /* ERCharacterGender.swift in Sources */,
 				DDF63E8D29AA185900A8889F /* ERCharacterDetailViewController.swift in Sources */,
 				DD8DC55429ABB222002FA083 /* ERSettingsOption.swift in Sources */,
@@ -450,6 +473,7 @@
 				DD0777B629A8F22200EBC004 /* ERLocationViewController.swift in Sources */,
 				DDF63E9B29AA7C1400A8889F /* ERCharacterInfoCollectionViewCell.swift in Sources */,
 				DD0777AF29A8F17D00EBC004 /* EREpisode.swift in Sources */,
+				DDE93B8A29BA5B170019DE2A /* ERLocationView.swift in Sources */,
 				DDF63EA229AA7CA100A8889F /* ERCharacterInfoCollectionViewCellViewModel.swift in Sources */,
 				DD07779429A8EEC900EBC004 /* ERTabBarController.swift in Sources */,
 				DD8DC54D29AB89DB002FA083 /* EREpisodeInfoCollectionViewCellViewModel.swift in Sources */,
