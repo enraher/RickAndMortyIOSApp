@@ -15,11 +15,20 @@ final class ERLocationViewModel {
     
     weak var delegate: ERLocationViewModelDelegate?
     
-    private var locations: [ERLocation] = []
+    private var locations: [ERLocation] = [] {
+        didSet {
+            for location in locations {
+                let cellViewModel = ERLocationTableViewCellViewModel(location: location)
+                if !cellViewModels.contains(cellViewModel) {
+                    cellViewModels.append(cellViewModel)
+                }
+            }
+        }
+    }
     
     private var apiInfo: ERGetAllLocationsResponse.Info?
     
-    private var cellViewModels: [String] = []
+    public private(set) var cellViewModels: [ERLocationTableViewCellViewModel] = []
     
     init() {
         

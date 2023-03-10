@@ -27,6 +27,8 @@
 		DD118A8129A955110091C402 /* ERCharacterListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A8029A955110091C402 /* ERCharacterListViewViewModel.swift */; };
 		DD118A8329A9558A0091C402 /* ERCharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A8229A9558A0091C402 /* ERCharacterListView.swift */; };
 		DD118A8529A959CB0091C402 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD118A8429A959CB0091C402 /* Extensions.swift */; };
+		DD73A15829BBA87000264234 /* ERLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD73A15729BBA87000264234 /* ERLocationTableViewCell.swift */; };
+		DD73A15A29BBA90A00264234 /* ERLocationTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD73A15929BBA90A00264234 /* ERLocationTableViewCellViewModel.swift */; };
 		DD8DC53829AB656E002FA083 /* EREpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC53729AB656E002FA083 /* EREpisodeDetailViewController.swift */; };
 		DD8DC53A29AB6791002FA083 /* ERAPICacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC53929AB6791002FA083 /* ERAPICacheManager.swift */; };
 		DD8DC53C29AB6B6D002FA083 /* EREpisodeDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC53B29AB6B6D002FA083 /* EREpisodeDetailViewViewModel.swift */; };
@@ -85,6 +87,8 @@
 		DD118A8029A955110091C402 /* ERCharacterListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterListViewViewModel.swift; sourceTree = "<group>"; };
 		DD118A8229A9558A0091C402 /* ERCharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCharacterListView.swift; sourceTree = "<group>"; };
 		DD118A8429A959CB0091C402 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DD73A15729BBA87000264234 /* ERLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERLocationTableViewCell.swift; sourceTree = "<group>"; };
+		DD73A15929BBA90A00264234 /* ERLocationTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ERLocationTableViewCellViewModel.swift; path = ../../../../../Desktop/ERLocationTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		DD8DC53729AB656E002FA083 /* EREpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EREpisodeDetailViewController.swift; sourceTree = "<group>"; };
 		DD8DC53929AB6791002FA083 /* ERAPICacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERAPICacheManager.swift; sourceTree = "<group>"; };
 		DD8DC53B29AB6B6D002FA083 /* EREpisodeDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EREpisodeDetailViewViewModel.swift; sourceTree = "<group>"; };
@@ -322,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				DDE93B8929BA5B170019DE2A /* ERLocationView.swift */,
+				DD73A15729BBA87000264234 /* ERLocationTableViewCell.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				DDE93B8C29BA5D120019DE2A /* ERLocationViewModel.swift */,
+				DD73A15929BBA90A00264234 /* ERLocationTableViewCellViewModel.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -501,6 +507,8 @@
 				DDA4403829A938B400581705 /* ERRequest.swift in Sources */,
 				DD8DC53829AB656E002FA083 /* EREpisodeDetailViewController.swift in Sources */,
 				DD118A8129A955110091C402 /* ERCharacterListViewViewModel.swift in Sources */,
+				DD73A15A29BBA90A00264234 /* ERLocationTableViewCellViewModel.swift in Sources */,
+				DD73A15829BBA87000264234 /* ERLocationTableViewCell.swift in Sources */,
 				DDF63E9D29AA7C2B00A8889F /* ERCharacterEpisodeCollectionViewCell.swift in Sources */,
 				DD8DC55229ABB1A7002FA083 /* ERSettingsCellViewModel.swift in Sources */,
 				DD0777B429A8F21000EBC004 /* ERCharacterViewController.swift in Sources */,
