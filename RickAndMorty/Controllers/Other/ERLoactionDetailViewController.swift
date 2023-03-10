@@ -7,9 +7,6 @@
 
 import UIKit
 
-
-
-
 final class ERLocationDetailViewController: UIViewController {
     
     private let viewModel: ERLocationDetailViewViewModel
@@ -53,7 +50,6 @@ final class ERLocationDetailViewController: UIViewController {
     private func didTapShare() {
         
     }
-    
 }
 
 extension ERLocationDetailViewController: ERLocationDetailViewViewModelDelegate, ERLocationDetailViewDelegate {

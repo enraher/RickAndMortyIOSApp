@@ -11,7 +11,6 @@ protocol ERLocationViewDelegate: AnyObject{
     func erLocationView(_ locationView: ERLocationView, didSelect location: ERLocation)
 }
 
-
 class ERLocationView: UIView {
 
     public weak var delegate: ERLocationViewDelegate?
@@ -75,7 +74,6 @@ class ERLocationView: UIView {
             tableView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
-
     
     public func configure(with viewModel: ERLocationViewModel) {
         self.viewModel = viewModel

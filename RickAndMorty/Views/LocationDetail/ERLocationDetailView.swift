@@ -9,9 +9,7 @@
 import UIKit
 
 protocol ERLocationDetailViewDelegate: AnyObject{
-    func erhLocationDetailView(_ detailView: ERLocationDetailView,
-                             didSelect character: ERCharacter
-    )
+    func erhLocationDetailView(_ detailView: ERLocationDetailView, didSelect character: ERCharacter)
 }
 
 final class ERLocationDetailView: UIView {
@@ -139,7 +137,6 @@ final class ERLocationDetailView: UIView {
 
     }
 }
-
 
 extension ERLocationDetailView: UICollectionViewDelegate, UICollectionViewDataSource {
    

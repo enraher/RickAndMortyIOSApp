@@ -47,8 +47,6 @@ class ERLocationTableViewCell: UITableViewCell {
         fatalError("EREpisodeInfoCollectionViewCell")
     }
     
-    
-    
     private func addConstraints() {
         let safeArea = contentView.safeAreaLayoutGuide
         NSLayoutConstraint.activate([
@@ -64,9 +62,7 @@ class ERLocationTableViewCell: UITableViewCell {
             dimensionLabel.leftAnchor.constraint(equalTo: safeArea.leftAnchor, constant: 10),
             dimensionLabel.rightAnchor.constraint(equalTo: safeArea.rightAnchor, constant: -10),
             dimensionLabel.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor, constant: -10),
-            
         ])
-        
     }
     
     override func prepareForReuse() {
