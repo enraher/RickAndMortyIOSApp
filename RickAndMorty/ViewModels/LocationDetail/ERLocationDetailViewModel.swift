@@ -1,29 +1,30 @@
 //
-//  EREpisodeDetailViewViewModel.swift
+//  ERLocationDetailViewModel.swift
 //  RickAndMorty
 //
-//  Created by Enrique Ramirez Hernandez on 26/2/23.
+//  Created by Enrique Ramirez Hernandez on 10/3/23.
 //
+
 
 import Foundation
 
-protocol EREpisodeDetailViewViewModelDelegate: AnyObject {
-    func didFetchEpisodeDetails()
+protocol ERLocationDetailViewViewModelDelegate: AnyObject {
+    func didFetchLocationDetails()
 }
 
-final class EREpisodeDetailViewViewModel {
+final class ERLocationDetailViewViewModel {
     enum ERSectionType {
         case information(viewModels: [EREpisodeInfoCollectionViewCellViewModel])
         case characters(viewModels: [ERCharacterCollectionViewCellViewModel])
     }
-    private var dataTuple: (episode: EREpisode, characters: [ERCharacter])? {
+    private var dataTuple: (location: ERLocation, characters: [ERCharacter])? {
         didSet {
             createCellViewModels()
-            delegate?.didFetchEpisodeDetails()
+            delegate?.didFetchLocationDetails()
         }
     }
     private let endpointUrl: URL?
-    weak var delegate: EREpisodeDetailViewViewModelDelegate?
+    weak var delegate: ERLocationDetailViewViewModelDelegate?
     
     public private(set) var cellViewModels: [ERSectionType] = []
     
@@ -38,12 +39,12 @@ final class EREpisodeDetailViewViewModel {
         return dataTuple.characters[index]
     }
     
-    public func fetchEpisodeData() {
+    public func fetchLocationData() {
         guard let url = endpointUrl,
                 let request = ERRequest(url: url)
         else { return }
 
-        ERService.shared.execute(request, expecting: EREpisode.self) { [weak self] result in
+        ERService.shared.execute(request, expecting: ERLocation.self) { [weak self] result in
             switch result {
             case .success(let model):
                 self?.fetchRelatedCharacters(from: model)
@@ -58,19 +59,18 @@ final class EREpisodeDetailViewViewModel {
             return
         }
         
-        let episode = dataTuple.episode
+        let location = dataTuple.location
+        let characters = dataTuple.characters
         
-        var createdString = episode.created
-        if let date = ERCharacterInfoCollectionViewCellViewModel.dateFormatter.date(from: episode.created) {
+        var createdString = location.created
+        if let date = ERCharacterInfoCollectionViewCellViewModel.dateFormatter.date(from: location.created) {
             createdString = ERCharacterInfoCollectionViewCellViewModel.shortDateFormatter.string(from: date)
         }
-                
-        let characters = dataTuple.characters
         cellViewModels = [
             .information(viewModels: [
-                .init(title: "Episode Name", value: episode.name),
-                .init(title: "Air Date", value: episode.air_date),
-                .init(title: "Episode", value: episode.episode),
+                .init(title: "Location Name", value: location.name),
+                .init(title: "Type", value: location.type),
+                .init(title: "Dimension", value: location.dimension),
                 .init(title: "Created", value: createdString)
             ]),
             .characters(viewModels: characters.compactMap({ character in
@@ -83,8 +83,8 @@ final class EREpisodeDetailViewViewModel {
         ]
     }
     
-    private func fetchRelatedCharacters(from episode: EREpisode) {
-        let requests: [ERRequest] = episode.characters.compactMap({
+    private func fetchRelatedCharacters(from location: ERLocation) {
+        let requests: [ERRequest] = location.residents.compactMap({
             return URL(string: $0)
         }).compactMap({
             return ERRequest(url: $0)
@@ -112,9 +112,10 @@ final class EREpisodeDetailViewViewModel {
 
         group.notify(queue: .main) {
             self.dataTuple = (
-                episode: episode,
+                location: location,
                 characters: characters
             )
         }
     }
 }
+

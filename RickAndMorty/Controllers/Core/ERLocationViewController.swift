@@ -15,6 +15,7 @@ final class ERLocationViewController: UIViewController, ERLocationViewModelDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        primaryView.delegate = self
         view.addSubview(primaryView)
         view.backgroundColor = .systemBackground
         title = "Locations"
@@ -50,4 +51,12 @@ final class ERLocationViewController: UIViewController, ERLocationViewModelDeleg
     func didFecthInitialLocation() {
         primaryView.configure(with: viewModel)
     }
+}
+
+extension ERLocationViewController: ERLocationViewDelegate {
+    func erLocationView(_ locationView: ERLocationView, didSelect location: ERLocation) {
+        let vc = ERLocationDetailViewController(location: location)
+        vc.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(vc, animated: true)
+    }    
 }
