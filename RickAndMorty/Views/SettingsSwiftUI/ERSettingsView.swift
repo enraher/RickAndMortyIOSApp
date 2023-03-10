@@ -14,7 +14,6 @@ struct ERSettingsView: View {
         self.viewModel = viewModel
     }
     
-    
     var body: some View {
         List(viewModel.cellViewModels) {
             cellViewModel in
