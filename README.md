@@ -14,4 +14,4 @@ In this app you can see all the Rick and Morty characters as well as Rick and Mo
 # To be completed
 - Locations 
 - Search functionality
-- Test
+- Tests
