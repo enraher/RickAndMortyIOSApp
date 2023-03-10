@@ -34,6 +34,13 @@ final class ERLocationViewModel {
         
     }
     
+    public func location(at index: Int) -> ERLocation? {
+        guard index >= locations.count else {
+            return nil
+        }
+        return self.locations[index]
+    }
+    
     public func fetchLocations() {
         ERService.shared.execute(
             .listLocationsRequest,

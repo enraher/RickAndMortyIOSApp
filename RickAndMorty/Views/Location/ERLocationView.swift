@@ -7,8 +7,15 @@
 
 import UIKit
 
+protocol ERLocationViewDelegate: AnyObject{
+    func erLocationView(_ locationView: ERLocationView, didSelect location: ERLocation)
+}
+
+
 class ERLocationView: UIView {
 
+    public weak var delegate: ERLocationViewDelegate?
+    
     private var viewModel: ERLocationViewModel? {
         didSet {
             spinner.stopAnimating()
@@ -21,7 +28,7 @@ class ERLocationView: UIView {
     }
     
     private let tableView: UITableView = {
-       let table = UITableView()
+        let table = UITableView(frame: .zero, style: .grouped)
         table.translatesAutoresizingMaskIntoConstraints = false
         table.alpha = 0
         table.isHidden = true
@@ -78,6 +85,10 @@ class ERLocationView: UIView {
 extension ERLocationView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        guard let locationModel = viewModel?.location(at: indexPath.row) else {
+            return
+        }
+        delegate?.erLocationView(self, didSelect: locationModel)
     }
 }
 
@@ -95,7 +106,7 @@ extension ERLocationView: UITableViewDataSource {
             fatalError()
         }
         let cellViewModel = cellViewModels[indexPath.row]
-        cell.textLabel?.text = cellViewModel.name
+        cell.configure(with: cellViewModel)
         return cell
     }
 }
