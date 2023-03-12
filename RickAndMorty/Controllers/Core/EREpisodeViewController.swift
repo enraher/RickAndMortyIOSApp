@@ -45,7 +45,7 @@ final class EREpisodeViewController: UIViewController, EREpisodeListViewDelegate
     
     @objc
     private func didTapSearch() {
-        let vc = ERSearchViewController(config: ERSearchViewController.Config(type: .character))
+        let vc = ERSearchViewController(config: ERSearchViewController.Config(type: .episode))
         vc.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(vc, animated: true)
     }

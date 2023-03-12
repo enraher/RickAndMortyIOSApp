@@ -48,7 +48,9 @@ final class ERLocationDetailViewController: UIViewController {
     
     @objc
     private func didTapShare() {
-        
+        let vc = ERSearchViewController(config: .init(type: .location))
+        vc.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

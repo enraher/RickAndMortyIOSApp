@@ -29,7 +29,7 @@ final class ERLocationViewController: UIViewController {
     
     @objc
     private func didTapSearch() {
-        let vc = ERSearchViewController(config: ERSearchViewController.Config(type: .character))
+        let vc = ERSearchViewController(config: ERSearchViewController.Config(type: .location))
         vc.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(vc, animated: true)
     }

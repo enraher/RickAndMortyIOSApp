@@ -14,13 +14,24 @@ class ERSearchViewController: UIViewController {
             case character
             case episode
             case location
+            
+            var title: String {
+                switch self {
+                case .character:
+                    return "Search Characters"
+                case .episode:
+                    return "Search Episode"
+                case .location:
+                    return "Search Location"
+                }
+            }
         }
         let type: `Type`
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Search"
+        title = config.type.title
         view.backgroundColor = .systemBackground
     }
     

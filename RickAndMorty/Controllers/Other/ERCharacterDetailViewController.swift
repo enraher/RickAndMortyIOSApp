@@ -40,7 +40,9 @@ class ERCharacterDetailViewController: UIViewController {
     
     @objc
     private func didTapShare() {
-        
+        let vc = ERSearchViewController(config: .init(type: .character))
+        vc.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(vc, animated: true)
     }
       
     private func addConstraint() {
