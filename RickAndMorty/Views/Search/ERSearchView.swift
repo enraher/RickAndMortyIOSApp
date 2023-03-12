@@ -7,9 +7,17 @@
 
 import UIKit
 
+protocol ERSearchViewDelegate: AnyObject{
+    func erSearchView(
+        _ seacrhView: ERSearchView,
+        didSelect option: ERSearchInputViewViewModel.DynamicOption
+    )
+}
+
 final class ERSearchView: UIView {
     
     private let viewModel: ERSearchViewViewModel
+    weak var delegate: ERSearchViewDelegate?
     
     private let noResultView = ERNoSearchResultsView()
     private let searchInputView = ERSearchInputView()
@@ -21,7 +29,9 @@ final class ERSearchView: UIView {
         translatesAutoresizingMaskIntoConstraints = false
         addSubviews(noResultView, searchInputView)
         addConstraints()
+        
         searchInputView.configure(with: ERSearchInputViewViewModel(type: viewModel.config.type))
+        searchInputView.delegate = self
     }
     
     required init?(coder: NSCoder) {
@@ -34,13 +44,17 @@ final class ERSearchView: UIView {
             searchInputView.topAnchor.constraint(equalTo: topAnchor),
             searchInputView.leftAnchor.constraint(equalTo: leftAnchor),
             searchInputView.rightAnchor.constraint(equalTo: rightAnchor),
-            searchInputView.heightAnchor.constraint(equalToConstant: 110),
+            searchInputView.heightAnchor.constraint(equalToConstant: viewModel.config.type == .episode ? 55 : 110),
             
             noResultView.heightAnchor.constraint(equalToConstant: 150),
             noResultView.widthAnchor.constraint(equalToConstant: 150),
             noResultView.centerYAnchor.constraint(equalTo: centerYAnchor),
             noResultView.centerXAnchor.constraint(equalTo: centerXAnchor),
         ])
+    }
+    
+    public func showKeyBoard() {
+        searchInputView.showKeyBoard()
     }
     
 }
@@ -55,5 +69,12 @@ extension ERSearchView: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
+    }
+}
+
+extension ERSearchView: ERSearchInputViewDelegate {
+    func erSearchInputView(_ inputlView: ERSearchInputView,
+                           didSelect option: ERSearchInputViewViewModel.DynamicOption) {
+        delegate?.erSearchView(self, didSelect: option)
     }
 }
