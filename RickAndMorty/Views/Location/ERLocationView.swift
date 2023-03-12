@@ -14,7 +14,7 @@ protocol ERLocationViewDelegate: AnyObject{
 class ERLocationView: UIView {
 
     public weak var delegate: ERLocationViewDelegate?
-    
+        
     private var viewModel: ERLocationViewModel? {
         didSet {
             spinner.stopAnimating()
@@ -25,7 +25,7 @@ class ERLocationView: UIView {
             }
         }
     }
-    
+        
     private let tableView: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
         table.translatesAutoresizingMaskIntoConstraints = false
@@ -49,6 +49,9 @@ class ERLocationView: UIView {
         addSubviews(tableView, spinner)
         spinner.startAnimating()
         addConstraints()
+        viewModel = ERLocationViewModel()
+        viewModel?.delegate = self
+        viewModel?.fetchLocations()
         configureTable()
     }
     
@@ -75,18 +78,8 @@ class ERLocationView: UIView {
         ])
     }
     
-    public func configure(with viewModel: ERLocationViewModel) {
+    public func configure(with viewModel: ERLocationViewModel?) {
         self.viewModel = viewModel
-    }
-}
-
-extension ERLocationView: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        guard let locationModel = viewModel?.location(at: indexPath.row) else {
-            return
-        }
-        delegate?.erLocationView(self, didSelect: locationModel)
     }
 }
 
@@ -106,5 +99,40 @@ extension ERLocationView: UITableViewDataSource {
         let cellViewModel = cellViewModels[indexPath.row]
         cell.configure(with: cellViewModel)
         return cell
+    }
+}
+
+extension ERLocationView: ERLocationViewModelDelegate {
+    func didFecthInitialLocation() {
+        configure(with: viewModel)
+    }
+    
+    func didLoadMoreLocations(with newIndexPath: [IndexPath]) {
+        tableView.performBatchUpdates {
+            self.tableView.insertRows(at: newIndexPath, with: .automatic)
+        }
+    }
+}
+
+extension ERLocationView: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        guard let locationModel = viewModel?.location(at: indexPath.row) else {
+            return
+        }
+        delegate?.erLocationView(self, didSelect: locationModel)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        guard let url = viewModel?.getNextUrl() else {
+            return
+        }
+        let offset = scrollView.contentOffset.y
+        let totalContentHeight = scrollView.contentSize.height
+        let totalScrollViewFixedHeight = scrollView.frame.size.height
+        
+        if offset >= (totalContentHeight - totalScrollViewFixedHeight - 120) {
+            viewModel?.fetchAdditionalLocations(url: url)
+        }
     }
 }
