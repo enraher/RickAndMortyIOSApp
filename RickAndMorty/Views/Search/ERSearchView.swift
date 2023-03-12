@@ -12,14 +12,16 @@ final class ERSearchView: UIView {
     private let viewModel: ERSearchViewViewModel
     
     private let noResultView = ERNoSearchResultsView()
+    private let searchInputView = ERSearchInputView()
     
     init(frame: CGRect, viewModel: ERSearchViewViewModel) {
         self.viewModel = viewModel
         super.init(frame: frame)
         backgroundColor = .systemBackground
         translatesAutoresizingMaskIntoConstraints = false
-        addSubviews(noResultView)
+        addSubviews(noResultView, searchInputView)
         addConstraints()
+        searchInputView.configure(with: ERSearchInputViewViewModel(type: viewModel.config.type))
     }
     
     required init?(coder: NSCoder) {
@@ -29,6 +31,11 @@ final class ERSearchView: UIView {
     
     private func addConstraints() {
         NSLayoutConstraint.activate([
+            searchInputView.topAnchor.constraint(equalTo: topAnchor),
+            searchInputView.leftAnchor.constraint(equalTo: leftAnchor),
+            searchInputView.rightAnchor.constraint(equalTo: rightAnchor),
+            searchInputView.heightAnchor.constraint(equalToConstant: 110),
+            
             noResultView.heightAnchor.constraint(equalToConstant: 150),
             noResultView.widthAnchor.constraint(equalToConstant: 150),
             noResultView.centerYAnchor.constraint(equalTo: centerYAnchor),
