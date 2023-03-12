@@ -28,17 +28,22 @@ class ERSearchViewController: UIViewController {
         }
         let type: `Type`
     }
+        
+    private let viewModel: ERSearchViewViewModel
+    private let searchView: ERSearchView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = config.type.title
+        title = viewModel.config.type.title
         view.backgroundColor = .systemBackground
+        view.addSubviews(searchView)
+        addConstraints()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Search", style: .done, target: self, action: #selector(didTapExecuteSearch))
     }
     
-    private let config: Config
-    
     init(config: Config) {
-        self.config = config
+        viewModel = ERSearchViewViewModel(config: config)
+        self.searchView = ERSearchView(frame: .zero, viewModel: self.viewModel)
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -46,4 +51,18 @@ class ERSearchViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    @objc
+    private func didTapExecuteSearch() {
+        
+    }
+    
+    private func addConstraints() {
+        let safeArea = view.safeAreaLayoutGuide
+        NSLayoutConstraint.activate([
+            searchView.topAnchor.constraint(equalTo: safeArea.topAnchor),
+            searchView.leftAnchor.constraint(equalTo: safeArea.leftAnchor),
+            searchView.rightAnchor.constraint(equalTo: safeArea.rightAnchor),
+            searchView.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor)
+        ])
+    }
 }

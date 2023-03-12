@@ -11,15 +11,29 @@ final class ERSearchView: UIView {
     
     private let viewModel: ERSearchViewViewModel
     
+    private let noResultView = ERNoSearchResultsView()
+    
     init(frame: CGRect, viewModel: ERSearchViewViewModel) {
         self.viewModel = viewModel
         super.init(frame: frame)
-        backgroundColor = .red
+        backgroundColor = .systemBackground
         translatesAutoresizingMaskIntoConstraints = false
+        addSubviews(noResultView)
+        addConstraints()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+    private func addConstraints() {
+        NSLayoutConstraint.activate([
+            noResultView.heightAnchor.constraint(equalToConstant: 150),
+            noResultView.widthAnchor.constraint(equalToConstant: 150),
+            noResultView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            noResultView.centerXAnchor.constraint(equalTo: centerXAnchor),
+        ])
     }
     
 }
