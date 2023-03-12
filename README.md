@@ -12,6 +12,8 @@ In this app you can see all the Rick and Morty characters as well as Rick and Mo
 - The app also has pagination.
 - The settings tab is developed using SwiftUI
 
-# To be completed
+# Working On
 - Search functionality
+
+# To be completed
 - Tests
